@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("testing commit")
+        print("ARBranch Test Commit")
     }
 
 
