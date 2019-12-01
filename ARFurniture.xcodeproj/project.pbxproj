@@ -76,6 +76,7 @@
 		6C6BA98E2392F4160001194C /* ARFurniture */ = {
 			isa = PBXGroup;
 			children = (
+				6C6BA9AF23932B310001194C /* fontss */,
 				6C6BA98F2392F4160001194C /* AppDelegate.swift */,
 				D717FA0C239336FE00192188 /* PersistentService.swift */,
 				D717FA0E239347EF00192188 /* User+CoreDataClass.swift */,
@@ -95,6 +96,15 @@
 				6C6BA9982392F4160001194C /* ARFurniture.xcdatamodeld */,
 			);
 			path = ARFurniture;
+			sourceTree = "<group>";
+		};
+		6C6BA9AF23932B310001194C /* fontss */ = {
+			isa = PBXGroup;
+			children = (
+				6C6BA9AC23932B290001194C /* Frutiger.ttf */,
+				6C6BA9AB23932B280001194C /* Frutiger_bold.ttf */,
+			);
+			path = fontss;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +165,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C6BA9AE23932B290001194C /* Frutiger.ttf in Resources */,
 				6C6BA99F2392F4170001194C /* LaunchScreen.storyboard in Resources */,
+				6C6BA9AD23932B290001194C /* Frutiger_bold.ttf in Resources */,
 				6C6BA99C2392F4170001194C /* Assets.xcassets in Resources */,
 				6C6BA9972392F4160001194C /* Main.storyboard in Resources */,
 			);
