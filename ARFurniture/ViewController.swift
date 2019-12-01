@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var companyName: UILabel!
+    @IBOutlet weak var letsStart: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,10 @@ class ViewController: UIViewController {
         signUpButton.layer.borderWidth = 1
         signUpButton.layer.cornerRadius = 15
         signUpButton.alpha = 0
+        
+        companyName.adjustsFontSizeToFitWidth = true
+        letsStart.adjustsFontSizeToFitWidth = true
+        logInButton.titleLabel?.adjustsFontSizeToFitWidth = true
     }
 
     override func viewDidAppear(_ animated: Bool) {
