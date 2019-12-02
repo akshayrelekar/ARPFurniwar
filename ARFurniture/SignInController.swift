@@ -30,8 +30,14 @@ class SignInController: UIViewController,UITextFieldDelegate,UIImagePickerContro
         super.viewDidLoad()
 
         imagePicker.delegate = self
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SignInController.tapped(tapGesture:)))
+        view.addGestureRecognizer(tapGesture)
         // Do any additional setup after loading the view.
        
+    }
+    
+    @objc func tapped(tapGesture: UITapGestureRecognizer){
+        view.endEditing(true)
     }
     
     @IBOutlet var segment: UISegmentedControl!
