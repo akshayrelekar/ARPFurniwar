@@ -12,12 +12,13 @@ import CoreData
 var users:[User] = [User]()
 class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
-    var username:String?
-    var password:String?
+    var username:String = ""
+    var password:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SignInController.tapped(tapGesture:)))
+        view.addGestureRecognizer(tapGesture)
         // Do any additional setup after loading the view.
         
         let fetchRequest:NSFetchRequest<User> = User.fetchRequest()
@@ -27,6 +28,10 @@ class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControl
         }catch{
             print("cannot fetch the saved user")
         }
+    }
+    
+    @objc func tapped(tapGesture: UITapGestureRecognizer){
+        view.endEditing(true)
     }
     
  func add(u:User){
@@ -60,9 +65,15 @@ class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControl
     
     @IBAction func onLogin(_ sender: Any) {
    
-    
+    if(username.isEmpty || password.isEmpty)
+    {
+        print("Inside empty loop")
+        let alert = UIAlertController(title: "Alert", message: "Username or password cannot be empty", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default comment"), style: .default, handler: .none))
+        self.present(alert, animated: true, completion: nil)
+    }
         
-        if(!username!.isEmpty && !password!.isEmpty){
+     else if(!username.isEmpty && !password.isEmpty){
             for u in users{
                 if(u.emailaddress == username){
                     let pswd = u.password
@@ -70,46 +81,15 @@ class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControl
                         print("User logged in")
                     }
                     else{
-                              var topWindow: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
-                                                 topWindow?.rootViewController = UIViewController()
-                                                 topWindow?.windowLevel = UIWindow.Level.alert + 1
-                                                 
-                                                 
-                                                 let alert = UIAlertController(title: "Alert", message: "Incorrect Username or password", preferredStyle: .alert)
-                                                 
-                                                 
-                                                 alert.addAction(UIAlertAction(title: "OK", style: .cancel) { _ in
-                                                     
-                                                     topWindow = nil // if you want to hide the topwindow then use this
-                                                     
-                                                 })
-                                                 
-                                                 topWindow?.makeKeyAndVisible()
-                                                 topWindow?.rootViewController?.present(alert, animated: true, completion: nil)
+                        
+                        let alert = UIAlertController(title: "Alert", message: "Incorrect Username or password", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default comment"), style: .default, handler: .none))
+                        self.present(alert, animated: true, completion: nil)
                           }
                 }
             }
         }
-        else if(username!.isEmpty || password!.isEmpty)
-        {
-            print("Inside empty loop")
-            var topWindow: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
-                               topWindow?.rootViewController = UIViewController()
-                               topWindow?.windowLevel = UIWindow.Level.alert + 1
-                               
-                               
-                               let alert = UIAlertController(title: "Alert", message: "Username or Password cannot be empty", preferredStyle: .alert)
-                               
-                               
-                               alert.addAction(UIAlertAction(title: "OK", style: .cancel) { _ in
-                                   
-                                   topWindow = nil // if you want to hide the topwindow then use this
-                                   
-                               })
-                               
-                               topWindow?.makeKeyAndVisible()
-                               topWindow?.rootViewController?.present(alert, animated: true, completion: nil)
-        }
+      
       
         
     }

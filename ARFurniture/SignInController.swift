@@ -52,7 +52,7 @@ class SignInController: UIViewController,UITextFieldDelegate,UIImagePickerContro
         // Pass the selected object to the new view controller.
         
          guard let iden = segue.identifier else {return}
-                if(iden == "LoginPage" ){
+                if(iden == "loginPage" ){
                     if let vd = segue.destination as? LoginController{
 //                        vd.add(u: user )
 //                        vd.add(Uarray: UserArray[0], image:)
@@ -242,6 +242,14 @@ class SignInController: UIViewController,UITextFieldDelegate,UIImagePickerContro
             user!.phone = phone
 //            user.profimg = StoredImg
             PersistentService.saveContext()
+            let alert = UIAlertController(title: "Alert", message: "Account Created", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default comment"), style: .destructive, handler: {
+                action in
+                self.dismiss(animated: true, completion: nil)
+            }))
+            self.present(alert, animated: true, completion: nil)
+            
+            //self.performSegue(withIdentifier: "loginPage", sender: self)
             
 //            let alert = UIAlertController(title: "✅", message: "Account Created", preferredStyle: .alert)
 //            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default comment"), style: .default, handler: .none))
