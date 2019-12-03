@@ -43,7 +43,7 @@ class HomeVController: UIViewController, iCarouselDelegate, iCarouselDataSource,
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SignInController.tapped(tapGesture:)))
         let tempView = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
-        let frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+        let frame = CGRect(x: 0, y: 0, width: 240, height: 240)
         var imageView = UIImageView()
         imageView.isUserInteractionEnabled = true
         imageView.addGestureRecognizer(tapGesture)
