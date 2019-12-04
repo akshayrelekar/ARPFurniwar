@@ -23,6 +23,7 @@
 		6C6BA99A2392F4160001194C /* ARFurniture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BA9982392F4160001194C /* ARFurniture.xcdatamodeld */; };
 		6C6BA99C2392F4170001194C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BA99B2392F4170001194C /* Assets.xcassets */; };
 		6C6BA99F2392F4170001194C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BA99D2392F4170001194C /* LaunchScreen.storyboard */; };
+		6C9AF3BC23973C1A00FBDE32 /* ARVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AF3BB23973C1A00FBDE32 /* ARVController.swift */; };
 		6CA1E0DD23948714006BA191 /* CategoriesTabVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1E0DC23948714006BA191 /* CategoriesTabVController.swift */; };
 		D717FA0D239336FE00192188 /* PersistentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA0C239336FE00192188 /* PersistentService.swift */; };
 		D717FA14239347EF00192188 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA0E239347EF00192188 /* User+CoreDataClass.swift */; };
@@ -56,6 +57,7 @@
 		6C6BA99B2392F4170001194C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C6BA99E2392F4170001194C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C6BA9A02392F4170001194C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C9AF3BB23973C1A00FBDE32 /* ARVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVController.swift; sourceTree = "<group>"; };
 		6CA1E0DC23948714006BA191 /* CategoriesTabVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTabVController.swift; sourceTree = "<group>"; };
 		D717FA0C239336FE00192188 /* PersistentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentService.swift; sourceTree = "<group>"; };
 		D717FA0E239347EF00192188 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				6C5C42A12395C29300EBEB35 /* ProfileVController.swift */,
 				6C5C42A32395E03D00EBEB35 /* ARFurniture-Bridging-Header.h */,
 				6C5C42AA2395E14C00EBEB35 /* HomeVController.swift */,
+				6C9AF3BB23973C1A00FBDE32 /* ARVController.swift */,
 			);
 			path = ARFurniture;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CA1E0DD23948714006BA191 /* CategoriesTabVController.swift in Sources */,
+				6C9AF3BC23973C1A00FBDE32 /* ARVController.swift in Sources */,
 				D717FA17239347EF00192188 /* Product+CoreDataProperties.swift in Sources */,
 				D717FA0D239336FE00192188 /* PersistentService.swift in Sources */,
 				D717FA18239347EF00192188 /* Category+CoreDataClass.swift in Sources */,
