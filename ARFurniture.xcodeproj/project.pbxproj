@@ -110,10 +110,6 @@
 		6C6BA98E2392F4160001194C /* ARFurniture */ = {
 			isa = PBXGroup;
 			children = (
-				6C5C42AC2395E5EB00EBEB35 /* dog1.png */,
-				6C5C42AE2395E5EB00EBEB35 /* dog2.png */,
-				6C5C42AF2395E5EB00EBEB35 /* dog3.png */,
-				6C5C42AD2395E5EB00EBEB35 /* dog4.png */,
 				6C5C42A42395E03D00EBEB35 /* iCarousel.h */,
 				6C5C42A52395E03E00EBEB35 /* iCarousel.m */,
 				6C6BA98F2392F4160001194C /* AppDelegate.swift */,
@@ -131,6 +127,10 @@
 				D717FA1A2393518600192188 /* LoginController.swift */,
 				D7BF8E1823930F4A006BA2AC /* SignInController.swift */,
 				6C6BA99B2392F4170001194C /* Assets.xcassets */,
+				6C5C42AC2395E5EB00EBEB35 /* dog1.png */,
+				6C5C42AE2395E5EB00EBEB35 /* dog2.png */,
+				6C5C42AF2395E5EB00EBEB35 /* dog3.png */,
+				6C5C42AD2395E5EB00EBEB35 /* dog4.png */,
 				6C6BA99D2392F4170001194C /* LaunchScreen.storyboard */,
 				6C6BA9A02392F4170001194C /* Info.plist */,
 				6C6BA9982392F4160001194C /* ARFurniture.xcdatamodeld */,
