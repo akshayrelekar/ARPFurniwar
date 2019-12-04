@@ -18,6 +18,7 @@ class ProductDetailsVController: UIViewController {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var priceNumberLabel: UILabel!
     @IBOutlet weak var dollarSignLabel: UILabel!
+    @IBOutlet weak var productNameLabel: UILabel!
     
     
     @IBOutlet weak var productImage: UIImageView!
@@ -31,6 +32,7 @@ class ProductDetailsVController: UIViewController {
         priceLabel.adjustsFontSizeToFitWidth = true
         priceNumberLabel.adjustsFontSizeToFitWidth = true
         dollarSignLabel.adjustsFontSizeToFitWidth = true
+        productNameLabel.adjustsFontSizeToFitWidth = true
         
     }
     

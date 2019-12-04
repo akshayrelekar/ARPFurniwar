@@ -33,6 +33,8 @@ class HomeVController: UIViewController, iCarouselDelegate, iCarouselDataSource,
     
     @objc func tapped(tapGesture: UITapGestureRecognizer){
         print("Its done")
+        let tappedImage = tapGesture.view as! UIImageView
+        producti = tappedImage
         self.performSegue(withIdentifier: "productDetails", sender: self)
     }
     
@@ -46,12 +48,14 @@ class HomeVController: UIViewController, iCarouselDelegate, iCarouselDataSource,
         let frame = CGRect(x: 0, y: 0, width: 240, height: 240)
         var imageView = UIImageView()
         imageView.isUserInteractionEnabled = true
-        imageView.addGestureRecognizer(tapGesture)
         imageView.frame = frame
         imageView.contentMode = .scaleAspectFit
         imageView.image = images[index]
+        print("index: \(index)")
         tempView.addSubview(imageView)
-        producti = imageView
+        //producti = imageView
+        imageView.addGestureRecognizer(tapGesture)
+        
         return tempView
     }
     
