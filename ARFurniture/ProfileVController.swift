@@ -15,19 +15,29 @@ class ProfileVController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        profilePic.layer.masksToBounds = true
-//        profilePic.layer.cornerRadius = profilePic.bounds.width/2
-        // Do any additional setup after loading the view.
+       NotificationCenter.default.addObserver(self, selector: #selector(SignInController.keyboardWillShow(notification:)), name: UIWindow.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(SignInController.keyboardWillHide(notification:)), name: UIWindow.keyboardWillHideNotification, object: nil)
+        profilePic.layer.masksToBounds = true
+        profilePic.layer.cornerRadius = profilePic.bounds.width/4
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SignInController.tapped(tapGesture:)))
+        view.addGestureRecognizer(tapGesture)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func tapped(tapGesture: UITapGestureRecognizer){
+        view.endEditing(true)
     }
-    */
-
+    
+    @objc func keyboardWillShow(notification: Notification){
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height/3
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
 }

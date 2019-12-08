@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         logInButton.layer.cornerRadius = 15
         logInButton.alpha = 0
         
-        
         //Sign Up Button customization
         signUpButton.layer.borderColor = UIColor.black.cgColor
         signUpButton.layer.borderWidth = 1

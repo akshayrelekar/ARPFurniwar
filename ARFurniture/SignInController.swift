@@ -28,16 +28,30 @@ class SignInController: UIViewController,UITextFieldDelegate,UIImagePickerContro
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         imagePicker.delegate = self
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SignInController.tapped(tapGesture:)))
         view.addGestureRecognizer(tapGesture)
-        // Do any additional setup after loading the view.
        
+        NotificationCenter.default.addObserver(self, selector: #selector(SignInController.keyboardWillShow(notification:)), name: UIWindow.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(SignInController.keyboardWillHide(notification:)), name: UIWindow.keyboardWillHideNotification, object: nil)
     }
     
     @objc func tapped(tapGesture: UITapGestureRecognizer){
         view.endEditing(true)
+    }
+    
+    @objc func keyboardWillShow(notification: Notification){
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height/2
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
     }
     
     @IBOutlet var segment: UISegmentedControl!

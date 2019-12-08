@@ -23,8 +23,16 @@
 		6C6BA99A2392F4160001194C /* ARFurniture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BA9982392F4160001194C /* ARFurniture.xcdatamodeld */; };
 		6C6BA99C2392F4170001194C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BA99B2392F4170001194C /* Assets.xcassets */; };
 		6C6BA99F2392F4170001194C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BA99D2392F4170001194C /* LaunchScreen.storyboard */; };
+		6C7B1C1723989DB3008536AE /* fabric_bump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C7B1C1523989DB2008536AE /* fabric_bump.jpg */; };
+		6C7B1C1823989DB3008536AE /* fabric_diff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C7B1C1623989DB3008536AE /* fabric_diff.jpg */; };
+		6C7B1C242398AA9B008536AE /* chair.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C7B1C232398AA9B008536AE /* chair.scn */; };
+		6C7B1C262398CBD4008536AE /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7B1C252398CBD4008536AE /* Plane.swift */; };
+		6C7B1C282398CCB1008536AE /* plane_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C7B1C272398CCB1008536AE /* plane_grid.png */; };
 		6C9AF3BC23973C1A00FBDE32 /* ARVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AF3BB23973C1A00FBDE32 /* ARVController.swift */; };
+		6C9AF3BE2397596600FBDE32 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AF3BD2397596600FBDE32 /* RoundButton.swift */; };
 		6CA1E0DD23948714006BA191 /* CategoriesTabVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1E0DC23948714006BA191 /* CategoriesTabVController.swift */; };
+		6CCF26CC239DA0F100BB5CAE /* stool1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26CB239DA0F100BB5CAE /* stool1.scn */; };
+		6CCF26D0239DA3A200BB5CAE /* stool2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26CF239DA3A200BB5CAE /* stool2.scn */; };
 		D717FA0D239336FE00192188 /* PersistentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA0C239336FE00192188 /* PersistentService.swift */; };
 		D717FA14239347EF00192188 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA0E239347EF00192188 /* User+CoreDataClass.swift */; };
 		D717FA15239347EF00192188 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA0F239347EF00192188 /* User+CoreDataProperties.swift */; };
@@ -57,8 +65,16 @@
 		6C6BA99B2392F4170001194C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C6BA99E2392F4170001194C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C6BA9A02392F4170001194C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C7B1C1523989DB2008536AE /* fabric_bump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fabric_bump.jpg; path = ../../Saba_Livingston_Armchair/fabric_bump.jpg; sourceTree = "<group>"; };
+		6C7B1C1623989DB3008536AE /* fabric_diff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fabric_diff.jpg; path = ../../Saba_Livingston_Armchair/fabric_diff.jpg; sourceTree = "<group>"; };
+		6C7B1C232398AA9B008536AE /* chair.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = chair.scn; path = ../../../../../../Users/akshayrelekar/Downloads/chair.scn; sourceTree = "<group>"; };
+		6C7B1C252398CBD4008536AE /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		6C7B1C272398CCB1008536AE /* plane_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane_grid.png; sourceTree = "<group>"; };
 		6C9AF3BB23973C1A00FBDE32 /* ARVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVController.swift; sourceTree = "<group>"; };
+		6C9AF3BD2397596600FBDE32 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		6CA1E0DC23948714006BA191 /* CategoriesTabVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTabVController.swift; sourceTree = "<group>"; };
+		6CCF26CB239DA0F100BB5CAE /* stool1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = stool1.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/stool1.scn; sourceTree = "<group>"; };
+		6CCF26CF239DA3A200BB5CAE /* stool2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = stool2.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/stool2.scn; sourceTree = "<group>"; };
 		D717FA0C239336FE00192188 /* PersistentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentService.swift; sourceTree = "<group>"; };
 		D717FA0E239347EF00192188 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D717FA0F239347EF00192188 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -110,6 +126,11 @@
 		6C6BA98E2392F4160001194C /* ARFurniture */ = {
 			isa = PBXGroup;
 			children = (
+				6CCF26CB239DA0F100BB5CAE /* stool1.scn */,
+				6CCF26CF239DA3A200BB5CAE /* stool2.scn */,
+				6C7B1C272398CCB1008536AE /* plane_grid.png */,
+				6C7B1C1523989DB2008536AE /* fabric_bump.jpg */,
+				6C7B1C1623989DB3008536AE /* fabric_diff.jpg */,
 				6C5C42A42395E03D00EBEB35 /* iCarousel.h */,
 				6C5C42A52395E03E00EBEB35 /* iCarousel.m */,
 				6C6BA98F2392F4160001194C /* AppDelegate.swift */,
@@ -126,6 +147,7 @@
 				6C5C42B42396200400EBEB35 /* ProductDetailsVController.swift */,
 				D717FA1A2393518600192188 /* LoginController.swift */,
 				D7BF8E1823930F4A006BA2AC /* SignInController.swift */,
+				6C7B1C232398AA9B008536AE /* chair.scn */,
 				6C6BA99B2392F4170001194C /* Assets.xcassets */,
 				6C5C42AC2395E5EB00EBEB35 /* dog1.png */,
 				6C5C42AE2395E5EB00EBEB35 /* dog2.png */,
@@ -139,6 +161,8 @@
 				6C5C42A32395E03D00EBEB35 /* ARFurniture-Bridging-Header.h */,
 				6C5C42AA2395E14C00EBEB35 /* HomeVController.swift */,
 				6C9AF3BB23973C1A00FBDE32 /* ARVController.swift */,
+				6C9AF3BD2397596600FBDE32 /* RoundButton.swift */,
+				6C7B1C252398CBD4008536AE /* Plane.swift */,
 			);
 			path = ARFurniture;
 			sourceTree = "<group>";
@@ -203,12 +227,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C6BA99F2392F4170001194C /* LaunchScreen.storyboard in Resources */,
+				6C7B1C1723989DB3008536AE /* fabric_bump.jpg in Resources */,
 				6C5C42B12395E5EB00EBEB35 /* dog4.png in Resources */,
 				6C6BA99C2392F4170001194C /* Assets.xcassets in Resources */,
 				6C5C42B02395E5EB00EBEB35 /* dog1.png in Resources */,
 				6C6BA9972392F4160001194C /* Main.storyboard in Resources */,
 				6C5C42B22395E5EB00EBEB35 /* dog2.png in Resources */,
 				6C5C42B32395E5EB00EBEB35 /* dog3.png in Resources */,
+				6CCF26D0239DA3A200BB5CAE /* stool2.scn in Resources */,
+				6C7B1C242398AA9B008536AE /* chair.scn in Resources */,
+				6C7B1C1823989DB3008536AE /* fabric_diff.jpg in Resources */,
+				6CCF26CC239DA0F100BB5CAE /* stool1.scn in Resources */,
+				6C7B1C282398CCB1008536AE /* plane_grid.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,9 +262,11 @@
 				6C6BA9922392F4160001194C /* SceneDelegate.swift in Sources */,
 				D717FA19239347EF00192188 /* Category+CoreDataProperties.swift in Sources */,
 				D717FA16239347EF00192188 /* Product+CoreDataClass.swift in Sources */,
+				6C7B1C262398CBD4008536AE /* Plane.swift in Sources */,
 				D7BF8E1923930F4A006BA2AC /* SignInController.swift in Sources */,
 				6C5C42B52396200400EBEB35 /* ProductDetailsVController.swift in Sources */,
 				6C6BA99A2392F4160001194C /* ARFurniture.xcdatamodeld in Sources */,
+				6C9AF3BE2397596600FBDE32 /* RoundButton.swift in Sources */,
 				6C5C42A62395E03E00EBEB35 /* iCarousel.m in Sources */,
 				6C5C42A22395C29300EBEB35 /* ProfileVController.swift in Sources */,
 				D717FA14239347EF00192188 /* User+CoreDataClass.swift in Sources */,
