@@ -464,7 +464,6 @@
         <!--Home-->
         <scene sceneID="ux7-O2-T2U">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zdk-7t-BfQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="td3-W3-Btl" customClass="HomeVController" customModule="ARFurniture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CgO-P9-ksp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
@@ -532,13 +531,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fmR-GR-FEG"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="tabBarItem:YXm-nR-8yT:image" catalog="system" id="YXm-nR-8yT"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="tabBarItem:YXm-nR-8yT:image" id="YXm-nR-8yT"/>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="carouselView" destination="ro8-vY-xla" id="82S-Ed-XaI"/>
                         <segue destination="Pfi-9F-3Tg" kind="show" identifier="productDetails" id="5xo-pw-wW7"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zdk-7t-BfQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2948" y="442"/>
         </scene>
@@ -1236,7 +1236,7 @@
         <image name="profileCoverPic" width="4032" height="3024"/>
         <image name="signUp" width="50" height="50"/>
         <image name="signupBackground" width="3500" height="2333"/>
-        <image name="tabBarItem:YXm-nR-8yT:image" catalog="system" width="64" height="52">
+        <image name="tabBarItem:YXm-nR-8yT:image" width="64" height="52">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T
 S2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBELDBscIRkmKisyNThCSktPUlUkbnVsbNcNDg8QERITFBUW
