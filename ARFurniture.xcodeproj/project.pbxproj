@@ -23,6 +23,11 @@
 		6C9AF3BC23973C1A00FBDE32 /* ARVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AF3BB23973C1A00FBDE32 /* ARVController.swift */; };
 		6C9AF3BE2397596600FBDE32 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AF3BD2397596600FBDE32 /* RoundButton.swift */; };
 		6CA1E0DD23948714006BA191 /* CategoriesTabVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1E0DC23948714006BA191 /* CategoriesTabVController.swift */; };
+		6CCF26CC239DA0F100BB5CAE /* stool1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26CB239DA0F100BB5CAE /* stool1.scn */; };
+		6CCF26D0239DA3A200BB5CAE /* stool2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26CF239DA3A200BB5CAE /* stool2.scn */; };
+		6CCF26D2239DA78B00BB5CAE /* chair2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26D1239DA78B00BB5CAE /* chair2.scn */; };
+		6CCF26D4239DA96900BB5CAE /* stool3.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26D3239DA96900BB5CAE /* stool3.scn */; };
+		6CCF26D6239DAAF300BB5CAE /* chair3.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26D5239DAAF300BB5CAE /* chair3.scn */; };
 		D717FA0D239336FE00192188 /* PersistentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA0C239336FE00192188 /* PersistentService.swift */; };
 		D717FA14239347EF00192188 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA0E239347EF00192188 /* User+CoreDataClass.swift */; };
 		D717FA15239347EF00192188 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA0F239347EF00192188 /* User+CoreDataProperties.swift */; };
@@ -70,6 +75,11 @@
 		6C9AF3BB23973C1A00FBDE32 /* ARVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVController.swift; sourceTree = "<group>"; };
 		6C9AF3BD2397596600FBDE32 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		6CA1E0DC23948714006BA191 /* CategoriesTabVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTabVController.swift; sourceTree = "<group>"; };
+		6CCF26CB239DA0F100BB5CAE /* stool1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = stool1.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/stool1.scn; sourceTree = "<group>"; };
+		6CCF26CF239DA3A200BB5CAE /* stool2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = stool2.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/stool2.scn; sourceTree = "<group>"; };
+		6CCF26D1239DA78B00BB5CAE /* chair2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = chair2.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/chair2.scn; sourceTree = "<group>"; };
+		6CCF26D3239DA96900BB5CAE /* stool3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = stool3.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/stool3.scn; sourceTree = "<group>"; };
+		6CCF26D5239DAAF300BB5CAE /* chair3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = chair3.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/chair3.scn; sourceTree = "<group>"; };
 		D717FA0C239336FE00192188 /* PersistentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentService.swift; sourceTree = "<group>"; };
 		D717FA0E239347EF00192188 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D717FA0F239347EF00192188 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -136,10 +146,15 @@
 		6C6BA98E2392F4160001194C /* ARFurniture */ = {
 			isa = PBXGroup;
 			children = (
-				D73174A3239759C800FEDF94 /* dog1.png */,
-				D73174A6239759E500FEDF94 /* dog2.png */,
-				D73174A7239759E500FEDF94 /* dog3.png */,
-				D73174A5239759E500FEDF94 /* dog4.png */,
+				6CCF26CB239DA0F100BB5CAE /* stool1.scn */,
+				6CCF26CF239DA3A200BB5CAE /* stool2.scn */,
+				6CCF26D3239DA96900BB5CAE /* stool3.scn */,
+				6C7B1C232398AA9B008536AE /* chair.scn */,
+				6CCF26D1239DA78B00BB5CAE /* chair2.scn */,
+				6CCF26D5239DAAF300BB5CAE /* chair3.scn */,
+				6C7B1C272398CCB1008536AE /* plane_grid.png */,
+				6C7B1C1523989DB2008536AE /* fabric_bump.jpg */,
+				6C7B1C1623989DB3008536AE /* fabric_diff.jpg */,
 				6C5C42A42395E03D00EBEB35 /* iCarousel.h */,
 				6C5C42A52395E03E00EBEB35 /* iCarousel.m */,
 				6C6BA98F2392F4160001194C /* AppDelegate.swift */,
@@ -245,18 +260,21 @@
 				D734144F239DB1CD000DA2C7 /* chair3.scn in Resources */,
 				D7341452239DB1CD000DA2C7 /* fabric_diff.jpg in Resources */,
 				6C6BA99F2392F4170001194C /* LaunchScreen.storyboard in Resources */,
-				D7341450239DB1CD000DA2C7 /* stool2.scn in Resources */,
-				D73174A8239759E500FEDF94 /* dog4.png in Resources */,
-				D73174B02398D0CA00FEDF94 /* chair.scn in Resources */,
-				D73174C2239D735000FEDF94 /* t0.png in Resources */,
+				6C7B1C1723989DB3008536AE /* fabric_bump.jpg in Resources */,
+				6C5C42B12395E5EB00EBEB35 /* dog4.png in Resources */,
 				6C6BA99C2392F4170001194C /* Assets.xcassets in Resources */,
 				D73174A4239759C800FEDF94 /* dog1.png in Resources */,
 				6C6BA9972392F4160001194C /* Main.storyboard in Resources */,
-				D7341454239DB1CD000DA2C7 /* fabric_bump.jpg in Resources */,
-				D7341453239DB1CD000DA2C7 /* stool1.scn in Resources */,
-				D7341451239DB1CD000DA2C7 /* chair2.scn in Resources */,
-				D73174A9239759E500FEDF94 /* dog2.png in Resources */,
-				D73174AA239759E500FEDF94 /* dog3.png in Resources */,
+				6CCF26D6239DAAF300BB5CAE /* chair3.scn in Resources */,
+				6C5C42B22395E5EB00EBEB35 /* dog2.png in Resources */,
+				6C5C42B32395E5EB00EBEB35 /* dog3.png in Resources */,
+				6CCF26D4239DA96900BB5CAE /* stool3.scn in Resources */,
+				6CCF26D0239DA3A200BB5CAE /* stool2.scn in Resources */,
+				6C7B1C242398AA9B008536AE /* chair.scn in Resources */,
+				6C7B1C1823989DB3008536AE /* fabric_diff.jpg in Resources */,
+				6CCF26CC239DA0F100BB5CAE /* stool1.scn in Resources */,
+				6C7B1C282398CCB1008536AE /* plane_grid.png in Resources */,
+				6CCF26D2239DA78B00BB5CAE /* chair2.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

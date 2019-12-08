@@ -54,7 +54,7 @@ class ARVController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
 //        node.position = SCNVector3(0,0,-0.5)
 //        self.ARSceneView.scene.rootNode.addChildNode(node)
         
-        guard let sofaScene = SCNScene(named: "stool2.scn"), let sofaNode = sofaScene.rootNode.childNode(withName: "stool2", recursively: true) else {
+        guard let sofaScene = SCNScene(named: "chair3.scn"), let sofaNode = sofaScene.rootNode.childNode(withName: "chair3", recursively: true) else {
             print("not found")
             return
         }
