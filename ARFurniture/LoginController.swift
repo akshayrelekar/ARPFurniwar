@@ -17,10 +17,10 @@ class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControl
     var flag:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(SignInController.keyboardWillShow(notification:)), name: UIWindow.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(SignInController.keyboardWillHide(notification:)), name: UIWindow.keyboardWillHideNotification, object: nil)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SignInController.tapped(tapGesture:)))
         view.addGestureRecognizer(tapGesture)
-        // Do any additional setup after loading the view.
-        
         let fetchRequest:NSFetchRequest<User> = User.fetchRequest()
         do{
             let u = try PersistentService.context.fetch(fetchRequest)
@@ -34,11 +34,25 @@ class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControl
         view.endEditing(true)
     }
     
- func add(u:User){
-     print("Inside add func")
-     users.append(u)
- }
+    @objc func keyboardWillShow(notification: Notification){
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height/3
+            }
+        }
+    }
     
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+     func add(u:User){
+         print("Inside add func")
+         users.append(u)
+     }
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
