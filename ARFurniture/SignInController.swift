@@ -54,9 +54,7 @@ class SignInController: UIViewController,UITextFieldDelegate,UIImagePickerContro
          guard let iden = segue.identifier else {return}
                 if(iden == "loginPage" ){
                     if let vd = segue.destination as? LoginController{
-//                        vd.add(u: user )
-//                        vd.add(Uarray: UserArray[0], image:)
-//                        vd.tableView.reloadData()
+//                       
                     }
                 }
     }
@@ -242,7 +240,7 @@ class SignInController: UIViewController,UITextFieldDelegate,UIImagePickerContro
             user!.phone = phone
 //            user.profimg = StoredImg
             PersistentService.saveContext()
-            let alert = UIAlertController(title: "Alert", message: "Account Created", preferredStyle: .alert)
+            let alert = UIAlertController(title: "✅", message: "Account Created", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default comment"), style: .destructive, handler: {
                 action in
                 self.dismiss(animated: true, completion: nil)

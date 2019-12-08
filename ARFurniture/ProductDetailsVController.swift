@@ -10,6 +10,10 @@ import UIKit
 
 class ProductDetailsVController: UIViewController {
 
+    var prodname:String?
+    var prodprice:Double?
+    var proddesc: String?
+    var prodspecs:String?
     var productphoto:UIImage?
     @IBOutlet weak var toARButton: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -20,11 +24,14 @@ class ProductDetailsVController: UIViewController {
     @IBOutlet weak var dollarSignLabel: UILabel!
     @IBOutlet weak var productNameLabel: UILabel!
     
+    @IBOutlet var productdesc: UITextView!
+    
+    @IBOutlet var productspec: UITextView!
     
     @IBOutlet weak var productImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        productImage.image = productphoto!
+       
         toARButton.titleLabel?.adjustsFontSizeToFitWidth = true
         descriptionLabel.adjustsFontSizeToFitWidth = true
         specsLabel.adjustsFontSizeToFitWidth = true
@@ -33,6 +40,14 @@ class ProductDetailsVController: UIViewController {
         priceNumberLabel.adjustsFontSizeToFitWidth = true
         dollarSignLabel.adjustsFontSizeToFitWidth = true
         productNameLabel.adjustsFontSizeToFitWidth = true
+        
+        productImage.image = productphoto!
+        productNameLabel.text = prodname
+        productdesc.text = proddesc
+        productspec.text = prodspecs
+        priceNumberLabel.text = String(format:"%f", prodprice!)
+        
+        
         
     }
     
