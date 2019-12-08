@@ -33,6 +33,9 @@
 		6CA1E0DD23948714006BA191 /* CategoriesTabVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1E0DC23948714006BA191 /* CategoriesTabVController.swift */; };
 		6CCF26CC239DA0F100BB5CAE /* stool1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26CB239DA0F100BB5CAE /* stool1.scn */; };
 		6CCF26D0239DA3A200BB5CAE /* stool2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26CF239DA3A200BB5CAE /* stool2.scn */; };
+		6CCF26D2239DA78B00BB5CAE /* chair2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26D1239DA78B00BB5CAE /* chair2.scn */; };
+		6CCF26D4239DA96900BB5CAE /* stool3.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26D3239DA96900BB5CAE /* stool3.scn */; };
+		6CCF26D6239DAAF300BB5CAE /* chair3.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26D5239DAAF300BB5CAE /* chair3.scn */; };
 		D717FA0D239336FE00192188 /* PersistentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA0C239336FE00192188 /* PersistentService.swift */; };
 		D717FA14239347EF00192188 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA0E239347EF00192188 /* User+CoreDataClass.swift */; };
 		D717FA15239347EF00192188 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA0F239347EF00192188 /* User+CoreDataProperties.swift */; };
@@ -75,6 +78,9 @@
 		6CA1E0DC23948714006BA191 /* CategoriesTabVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTabVController.swift; sourceTree = "<group>"; };
 		6CCF26CB239DA0F100BB5CAE /* stool1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = stool1.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/stool1.scn; sourceTree = "<group>"; };
 		6CCF26CF239DA3A200BB5CAE /* stool2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = stool2.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/stool2.scn; sourceTree = "<group>"; };
+		6CCF26D1239DA78B00BB5CAE /* chair2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = chair2.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/chair2.scn; sourceTree = "<group>"; };
+		6CCF26D3239DA96900BB5CAE /* stool3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = stool3.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/stool3.scn; sourceTree = "<group>"; };
+		6CCF26D5239DAAF300BB5CAE /* chair3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = chair3.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/chair3.scn; sourceTree = "<group>"; };
 		D717FA0C239336FE00192188 /* PersistentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentService.swift; sourceTree = "<group>"; };
 		D717FA0E239347EF00192188 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D717FA0F239347EF00192188 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -128,6 +134,10 @@
 			children = (
 				6CCF26CB239DA0F100BB5CAE /* stool1.scn */,
 				6CCF26CF239DA3A200BB5CAE /* stool2.scn */,
+				6CCF26D3239DA96900BB5CAE /* stool3.scn */,
+				6C7B1C232398AA9B008536AE /* chair.scn */,
+				6CCF26D1239DA78B00BB5CAE /* chair2.scn */,
+				6CCF26D5239DAAF300BB5CAE /* chair3.scn */,
 				6C7B1C272398CCB1008536AE /* plane_grid.png */,
 				6C7B1C1523989DB2008536AE /* fabric_bump.jpg */,
 				6C7B1C1623989DB3008536AE /* fabric_diff.jpg */,
@@ -147,7 +157,6 @@
 				6C5C42B42396200400EBEB35 /* ProductDetailsVController.swift */,
 				D717FA1A2393518600192188 /* LoginController.swift */,
 				D7BF8E1823930F4A006BA2AC /* SignInController.swift */,
-				6C7B1C232398AA9B008536AE /* chair.scn */,
 				6C6BA99B2392F4170001194C /* Assets.xcassets */,
 				6C5C42AC2395E5EB00EBEB35 /* dog1.png */,
 				6C5C42AE2395E5EB00EBEB35 /* dog2.png */,
@@ -232,13 +241,16 @@
 				6C6BA99C2392F4170001194C /* Assets.xcassets in Resources */,
 				6C5C42B02395E5EB00EBEB35 /* dog1.png in Resources */,
 				6C6BA9972392F4160001194C /* Main.storyboard in Resources */,
+				6CCF26D6239DAAF300BB5CAE /* chair3.scn in Resources */,
 				6C5C42B22395E5EB00EBEB35 /* dog2.png in Resources */,
 				6C5C42B32395E5EB00EBEB35 /* dog3.png in Resources */,
+				6CCF26D4239DA96900BB5CAE /* stool3.scn in Resources */,
 				6CCF26D0239DA3A200BB5CAE /* stool2.scn in Resources */,
 				6C7B1C242398AA9B008536AE /* chair.scn in Resources */,
 				6C7B1C1823989DB3008536AE /* fabric_diff.jpg in Resources */,
 				6CCF26CC239DA0F100BB5CAE /* stool1.scn in Resources */,
 				6C7B1C282398CCB1008536AE /* plane_grid.png in Resources */,
+				6CCF26D2239DA78B00BB5CAE /* chair2.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
