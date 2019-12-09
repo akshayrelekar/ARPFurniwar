@@ -87,7 +87,7 @@ class ProductListVController: UITableViewController,UISearchResultsUpdating,UISe
                }
                cell.textLabel?.text = object.productName
                //        cell.imageView?.image = UIImage(named: "p\(indexPath.row).jpg")
-               cell.imageView?.image = UIImage(data:ProductArr[indexPath.row].productImage!,scale:1.0)
+               cell.imageView?.image = UIImage(data:ProductArr[indexPath.row].productImage! )
                cell.detailTextLabel?.text = object.productDesc
                return cell
     }
@@ -157,9 +157,8 @@ class ProductListVController: UITableViewController,UISearchResultsUpdating,UISe
                 vd.proddesc = ProductArr[row ?? 0].productDesc
                 vd.prodspecs = ProductArr[row ?? 0].productSpec
                 vd.prodprice = ProductArr[row ?? 0].productCost
-              
                 vd.productphoto = UIImage(data:ProductArr[row!].productImage!,scale:1.0)
-//                vd.passEvent(e: ProductArr[row ?? 0])
+                vd.productImgName = ProductArr[row ?? 0].productImageName
             }
             
         }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 var TableArray:[Product] = [Product]()
 var BedArray:[Product] = [Product]()
@@ -14,6 +15,10 @@ var ChairArray:[Product] = [Product]()
 var SofaArray:[Product] = [Product]()
 var BeanArray:[Product] = [Product]()
 class AddProductsVController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
+    
+    
+
+    var totalproducts:[Product] = [Product]()
     
     @IBOutlet var picker: UIPickerView!
      var pickerData: [String] = [String]()
@@ -42,17 +47,47 @@ class AddProductsVController: UIViewController,UIPickerViewDelegate,UIPickerView
         // Do any additional setup after loading the view.
     self.picker.delegate = self
     self.picker.dataSource = self
-        CategoryName.adjustsFontSizeToFitWidth = true
-        ProductName.adjustsFontSizeToFitWidth = true
-        ProductDesc.adjustsFontSizeToFitWidth = true
-        ProductSpec.adjustsFontSizeToFitWidth = true
         
-        ProductCost.adjustsFontSizeToFitWidth = true
+    NotificationCenter.default.addObserver(self, selector: #selector(AddProductsVController.keyboardWillShow(notification:)), name: UIWindow.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(AddProductsVController.keyboardWillHide(notification:)), name: UIWindow.keyboardWillHideNotification, object: nil)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AddProductsVController.tapped(tapGesture:)))
+        view.addGestureRecognizer(tapGesture)
+    CategoryName.adjustsFontSizeToFitWidth = true
+    ProductName.adjustsFontSizeToFitWidth = true
+    ProductDesc.adjustsFontSizeToFitWidth = true
+    ProductSpec.adjustsFontSizeToFitWidth = true
+    ProductCost.adjustsFontSizeToFitWidth = true
         
-        pickerData = ["Beds", "Tables", "Chairs/Stools", "Sofa Sets", "Bean Bags"]
-       
+    pickerData = ["Beds", "Tables", "Chairs/Stools", "Sofa Sets", "Bean Bags"]
+    
+        let fetchRequest:NSFetchRequest<Product> = Product.fetchRequest()
+        do{
+            let e = try PersistentService.context.fetch(fetchRequest)
+            totalproducts = e
+            
+        }catch{
+            print("cannot fetch the saved event")
+        }
+     
     }
     
+    @objc func tapped(tapGesture: UITapGestureRecognizer){
+           view.endEditing(true)
+       }
+    
+    @objc func keyboardWillShow(notification: Notification){
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height/3
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
            return 1
        }
@@ -96,33 +131,35 @@ class AddProductsVController: UIViewController,UIPickerViewDelegate,UIPickerView
         
             switch selectedCategory {
                 case "Tables":
-                    p.productId = Int16(TableArray.count)
+                    p.productId = Int16(totalproducts.count)
                     p.productImage = UIImage(named: "t\(TableArray.count).png")?.pngData()
+                    p.productImageName = "t\(TableArray.count)"
                     TableArray.append(p)
+                    print(p.productImage)
                     print("Persisted - \(TableArray.count)")
                     PersistentService.saveContext()
                 break
                 case "Beds":
-                    p.productId = Int16(BedArray.count)
-                //  p.productImage = "t\(TableArray.count)"
+                    p.productId = Int16(totalproducts.count)
+                  p.productImage = UIImage(named: "t\(BedArray.count).png")?.pngData()
                     BedArray.append(p)
                     PersistentService.saveContext()
                     break
                 case "Chairs/Stools":
-                     p.productId = Int16(ChairArray.count)
-                //  p.productImage = "t\(TableArray.count)"
+                     p.productId = Int16(totalproducts.count)
+                  p.productImage = UIImage(named: "t\(ChairArray.count).png")?.pngData()
                     ChairArray.append(p)
                     PersistentService.saveContext()
                     break
                 case "Sofa Sets":
-                     p.productId = Int16(SofaArray.count)
-                //  p.productImage = "t\(TableArray.count)"
+                     p.productId = Int16(totalproducts.count)
+                  p.productImage = UIImage(named: "t\(SofaArray.count).png")?.pngData()
                     SofaArray.append(p)
                     PersistentService.saveContext()
                     break
                 case "Bean Bags":
-                     p.productId = Int16(BeanArray.count)
-                //  p.productImage = "t\(TableArray.count)"
+                     p.productId = Int16(totalproducts.count)
+                  p.productImage = UIImage(named: "t\(BeanArray.count).png")?.pngData()
                     BeanArray.append(p)
                     PersistentService.saveContext()
                     break
@@ -131,7 +168,11 @@ class AddProductsVController: UIViewController,UIPickerViewDelegate,UIPickerView
                 return
         }
 //
-        }
+        let alert = UIAlertController(title: "✅", message: "User Added Successfully", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default comment"), style: .default, handler: .none))
+        self.present(alert, animated: true, completion: nil)
+          }
+        
         
        
         

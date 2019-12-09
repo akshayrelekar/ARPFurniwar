@@ -15,6 +15,8 @@ class ProductDetailsVController: UIViewController {
     var proddesc: String?
     var prodspecs:String?
     var productphoto:UIImage?
+    var productImgName:String?
+    
     @IBOutlet weak var toARButton: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var specsLabel: UILabel!
@@ -41,6 +43,7 @@ class ProductDetailsVController: UIViewController {
         dollarSignLabel.adjustsFontSizeToFitWidth = true
         productNameLabel.adjustsFontSizeToFitWidth = true
         
+       
         productImage.image = productphoto!
         productNameLabel.text = prodname
         productdesc.text = proddesc
@@ -52,14 +55,24 @@ class ProductDetailsVController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
-    */
+         guard let id = segue.identifier else {return}
+                if( id == "CameraSegue"){
+                    
+                    if let vd = segue.destination as? ARVController {
+                       vd.prodimgname = productImgName
+        //                vd.passEvent(e: ProductArr[row ?? 0])
+                    }
+                    
+                }
+            }
+    
+    
 
 }

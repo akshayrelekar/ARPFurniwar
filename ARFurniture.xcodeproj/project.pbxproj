@@ -20,14 +20,8 @@
 		6C6BA99C2392F4170001194C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BA99B2392F4170001194C /* Assets.xcassets */; };
 		6C6BA99F2392F4170001194C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BA99D2392F4170001194C /* LaunchScreen.storyboard */; };
 		6C7B1C262398CBD4008536AE /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7B1C252398CBD4008536AE /* Plane.swift */; };
-		6C9AF3BC23973C1A00FBDE32 /* ARVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AF3BB23973C1A00FBDE32 /* ARVController.swift */; };
 		6C9AF3BE2397596600FBDE32 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AF3BD2397596600FBDE32 /* RoundButton.swift */; };
 		6CA1E0DD23948714006BA191 /* CategoriesTabVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1E0DC23948714006BA191 /* CategoriesTabVController.swift */; };
-		6CCF26CC239DA0F100BB5CAE /* stool1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26CB239DA0F100BB5CAE /* stool1.scn */; };
-		6CCF26D0239DA3A200BB5CAE /* stool2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26CF239DA3A200BB5CAE /* stool2.scn */; };
-		6CCF26D2239DA78B00BB5CAE /* chair2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26D1239DA78B00BB5CAE /* chair2.scn */; };
-		6CCF26D4239DA96900BB5CAE /* stool3.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26D3239DA96900BB5CAE /* stool3.scn */; };
-		6CCF26D6239DAAF300BB5CAE /* chair3.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF26D5239DAAF300BB5CAE /* chair3.scn */; };
 		D717FA0D239336FE00192188 /* PersistentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA0C239336FE00192188 /* PersistentService.swift */; };
 		D717FA14239347EF00192188 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA0E239347EF00192188 /* User+CoreDataClass.swift */; };
 		D717FA15239347EF00192188 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA0F239347EF00192188 /* User+CoreDataProperties.swift */; };
@@ -36,21 +30,18 @@
 		D717FA18239347EF00192188 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA12239347EF00192188 /* Category+CoreDataClass.swift */; };
 		D717FA19239347EF00192188 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA13239347EF00192188 /* Category+CoreDataProperties.swift */; };
 		D717FA1B2393518600192188 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D717FA1A2393518600192188 /* LoginController.swift */; };
-		D73174A4239759C800FEDF94 /* dog1.png in Resources */ = {isa = PBXBuildFile; fileRef = D73174A3239759C800FEDF94 /* dog1.png */; };
-		D73174A8239759E500FEDF94 /* dog4.png in Resources */ = {isa = PBXBuildFile; fileRef = D73174A5239759E500FEDF94 /* dog4.png */; };
-		D73174A9239759E500FEDF94 /* dog2.png in Resources */ = {isa = PBXBuildFile; fileRef = D73174A6239759E500FEDF94 /* dog2.png */; };
-		D73174AA239759E500FEDF94 /* dog3.png in Resources */ = {isa = PBXBuildFile; fileRef = D73174A7239759E500FEDF94 /* dog3.png */; };
 		D73174AC2397654B00FEDF94 /* AddProductsVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73174AB2397654B00FEDF94 /* AddProductsVController.swift */; };
-		D73174B02398D0CA00FEDF94 /* chair.scn in Resources */ = {isa = PBXBuildFile; fileRef = D73174AF2398D0CA00FEDF94 /* chair.scn */; };
-		D73174C2239D735000FEDF94 /* t0.png in Resources */ = {isa = PBXBuildFile; fileRef = D73174C1239D735000FEDF94 /* t0.png */; };
 		D73174C4239D766200FEDF94 /* ProductListVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73174C3239D766200FEDF94 /* ProductListVController.swift */; };
 		D734144F239DB1CD000DA2C7 /* chair3.scn in Resources */ = {isa = PBXBuildFile; fileRef = D7341448239DB1CD000DA2C7 /* chair3.scn */; };
-		D7341450239DB1CD000DA2C7 /* stool2.scn in Resources */ = {isa = PBXBuildFile; fileRef = D7341449239DB1CD000DA2C7 /* stool2.scn */; };
-		D7341451239DB1CD000DA2C7 /* chair2.scn in Resources */ = {isa = PBXBuildFile; fileRef = D734144A239DB1CD000DA2C7 /* chair2.scn */; };
 		D7341452239DB1CD000DA2C7 /* fabric_diff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D734144B239DB1CD000DA2C7 /* fabric_diff.jpg */; };
-		D7341453239DB1CD000DA2C7 /* stool1.scn in Resources */ = {isa = PBXBuildFile; fileRef = D734144C239DB1CD000DA2C7 /* stool1.scn */; };
-		D7341454239DB1CD000DA2C7 /* fabric_bump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D734144D239DB1CD000DA2C7 /* fabric_bump.jpg */; };
 		D7341455239DB1CD000DA2C7 /* stool3.scn in Resources */ = {isa = PBXBuildFile; fileRef = D734144E239DB1CD000DA2C7 /* stool3.scn */; };
+		D734145B239DB87A000DA2C7 /* dog4.png in Resources */ = {isa = PBXBuildFile; fileRef = D7341457239DB87A000DA2C7 /* dog4.png */; };
+		D734145C239DB87A000DA2C7 /* dog3.png in Resources */ = {isa = PBXBuildFile; fileRef = D7341458239DB87A000DA2C7 /* dog3.png */; };
+		D734145D239DB87A000DA2C7 /* dog1.png in Resources */ = {isa = PBXBuildFile; fileRef = D7341459239DB87A000DA2C7 /* dog1.png */; };
+		D734145E239DB87A000DA2C7 /* dog2.png in Resources */ = {isa = PBXBuildFile; fileRef = D734145A239DB87A000DA2C7 /* dog2.png */; };
+		D7341460239DCC45000DA2C7 /* t0.png in Resources */ = {isa = PBXBuildFile; fileRef = D734145F239DCC45000DA2C7 /* t0.png */; };
+		D7341462239E0243000DA2C7 /* ARVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7341461239E0243000DA2C7 /* ARVController.swift */; };
+		D7341466239E05A9000DA2C7 /* t0.scn in Resources */ = {isa = PBXBuildFile; fileRef = D7341465239E05A9000DA2C7 /* t0.scn */; };
 		D7BF8E1923930F4A006BA2AC /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF8E1823930F4A006BA2AC /* SignInController.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,14 +63,8 @@
 		6C6BA99E2392F4170001194C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C6BA9A02392F4170001194C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C7B1C252398CBD4008536AE /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
-		6C9AF3BB23973C1A00FBDE32 /* ARVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVController.swift; sourceTree = "<group>"; };
 		6C9AF3BD2397596600FBDE32 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		6CA1E0DC23948714006BA191 /* CategoriesTabVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTabVController.swift; sourceTree = "<group>"; };
-		6CCF26CB239DA0F100BB5CAE /* stool1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = stool1.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/stool1.scn; sourceTree = "<group>"; };
-		6CCF26CF239DA3A200BB5CAE /* stool2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = stool2.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/stool2.scn; sourceTree = "<group>"; };
-		6CCF26D1239DA78B00BB5CAE /* chair2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = chair2.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/chair2.scn; sourceTree = "<group>"; };
-		6CCF26D3239DA96900BB5CAE /* stool3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = stool3.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/stool3.scn; sourceTree = "<group>"; };
-		6CCF26D5239DAAF300BB5CAE /* chair3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = chair3.scn; path = ../../../../../../Users/akshayrelekar/Desktop/Models/3D/chair3.scn; sourceTree = "<group>"; };
 		D717FA0C239336FE00192188 /* PersistentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentService.swift; sourceTree = "<group>"; };
 		D717FA0E239347EF00192188 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D717FA0F239347EF00192188 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -89,12 +74,7 @@
 		D717FA13239347EF00192188 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D717FA1A2393518600192188 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		D73174A3239759C800FEDF94 /* dog1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dog1.png; path = ../../../../../Downloads/dogs/dog1.png; sourceTree = "<group>"; };
-		D73174A5239759E500FEDF94 /* dog4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dog4.png; path = ../../../../../Downloads/dogs/dog4.png; sourceTree = "<group>"; };
-		D73174A6239759E500FEDF94 /* dog2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dog2.png; path = ../../../../../Downloads/dogs/dog2.png; sourceTree = "<group>"; };
-		D73174A7239759E500FEDF94 /* dog3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dog3.png; path = ../../../../../Downloads/dogs/dog3.png; sourceTree = "<group>"; };
 		D73174AB2397654B00FEDF94 /* AddProductsVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductsVController.swift; sourceTree = "<group>"; };
-		D73174AF2398D0CA00FEDF94 /* chair.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = chair.scn; path = ../../../../../Downloads/chair.scn; sourceTree = "<group>"; };
-		D73174C1239D735000FEDF94 /* t0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = t0.png; sourceTree = "<group>"; };
 		D73174C3239D766200FEDF94 /* ProductListVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListVController.swift; sourceTree = "<group>"; };
 		D7341448239DB1CD000DA2C7 /* chair3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = chair3.scn; path = ../../../../../Downloads/chair3.scn; sourceTree = "<group>"; };
 		D7341449239DB1CD000DA2C7 /* stool2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = stool2.scn; path = ../../../../../Downloads/stool2.scn; sourceTree = "<group>"; };
@@ -103,6 +83,13 @@
 		D734144C239DB1CD000DA2C7 /* stool1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = stool1.scn; path = ../../../../../Downloads/stool1.scn; sourceTree = "<group>"; };
 		D734144D239DB1CD000DA2C7 /* fabric_bump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fabric_bump.jpg; path = ../../../../../Downloads/fabric_bump.jpg; sourceTree = "<group>"; };
 		D734144E239DB1CD000DA2C7 /* stool3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = stool3.scn; path = ../../../../../Downloads/stool3.scn; sourceTree = "<group>"; };
+		D7341457239DB87A000DA2C7 /* dog4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dog4.png; path = ../../../../../Downloads/dogs/dog4.png; sourceTree = "<group>"; };
+		D7341458239DB87A000DA2C7 /* dog3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dog3.png; path = ../../../../../Downloads/dogs/dog3.png; sourceTree = "<group>"; };
+		D7341459239DB87A000DA2C7 /* dog1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dog1.png; path = ../../../../../Downloads/dogs/dog1.png; sourceTree = "<group>"; };
+		D734145A239DB87A000DA2C7 /* dog2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dog2.png; path = ../../../../../Downloads/dogs/dog2.png; sourceTree = "<group>"; };
+		D734145F239DCC45000DA2C7 /* t0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = t0.png; path = ../../../../../Downloads/t0.png; sourceTree = "<group>"; };
+		D7341461239E0243000DA2C7 /* ARVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVController.swift; sourceTree = "<group>"; };
+		D7341465239E05A9000DA2C7 /* t0.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = t0.scn; path = ../../../../../Downloads/t0.scn; sourceTree = "<group>"; };
 		D7BF8E1823930F4A006BA2AC /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +119,7 @@
 				6C6BA98E2392F4160001194C /* ARFurniture */,
 				6C6BA98D2392F4160001194C /* Products */,
 				6C5C42A72395E0AD00EBEB35 /* Frameworks */,
+				D7341456239DB53B000DA2C7 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,17 +134,10 @@
 		6C6BA98E2392F4160001194C /* ARFurniture */ = {
 			isa = PBXGroup;
 			children = (
-				6CCF26CB239DA0F100BB5CAE /* stool1.scn */,
-				6CCF26CF239DA3A200BB5CAE /* stool2.scn */,
-				6CCF26D3239DA96900BB5CAE /* stool3.scn */,
-				6C7B1C232398AA9B008536AE /* chair.scn */,
-				6CCF26D1239DA78B00BB5CAE /* chair2.scn */,
-				6CCF26D5239DAAF300BB5CAE /* chair3.scn */,
-				6C7B1C272398CCB1008536AE /* plane_grid.png */,
-				6C7B1C1523989DB2008536AE /* fabric_bump.jpg */,
-				6C7B1C1623989DB3008536AE /* fabric_diff.jpg */,
+				D734145F239DCC45000DA2C7 /* t0.png */,
 				6C5C42A42395E03D00EBEB35 /* iCarousel.h */,
 				6C5C42A52395E03E00EBEB35 /* iCarousel.m */,
+				D7341461239E0243000DA2C7 /* ARVController.swift */,
 				6C6BA98F2392F4160001194C /* AppDelegate.swift */,
 				D717FA0C239336FE00192188 /* PersistentService.swift */,
 				D717FA0E239347EF00192188 /* User+CoreDataClass.swift */,
@@ -165,11 +146,11 @@
 				D717FA11239347EF00192188 /* Product+CoreDataProperties.swift */,
 				D717FA12239347EF00192188 /* Category+CoreDataClass.swift */,
 				D717FA13239347EF00192188 /* Category+CoreDataProperties.swift */,
-				D73174AF2398D0CA00FEDF94 /* chair.scn */,
 				D734144A239DB1CD000DA2C7 /* chair2.scn */,
 				D7341448239DB1CD000DA2C7 /* chair3.scn */,
 				D734144D239DB1CD000DA2C7 /* fabric_bump.jpg */,
 				D734144B239DB1CD000DA2C7 /* fabric_diff.jpg */,
+				D7341465239E05A9000DA2C7 /* t0.scn */,
 				D734144C239DB1CD000DA2C7 /* stool1.scn */,
 				D7341449239DB1CD000DA2C7 /* stool2.scn */,
 				D734144E239DB1CD000DA2C7 /* stool3.scn */,
@@ -178,23 +159,33 @@
 				6C6BA9952392F4160001194C /* Main.storyboard */,
 				D73174C3239D766200FEDF94 /* ProductListVController.swift */,
 				D73174AB2397654B00FEDF94 /* AddProductsVController.swift */,
-				D73174C1239D735000FEDF94 /* t0.png */,
 				6C5C42B42396200400EBEB35 /* ProductDetailsVController.swift */,
 				D717FA1A2393518600192188 /* LoginController.swift */,
+				D7341459239DB87A000DA2C7 /* dog1.png */,
+				D734145A239DB87A000DA2C7 /* dog2.png */,
+				D7341458239DB87A000DA2C7 /* dog3.png */,
+				D7341457239DB87A000DA2C7 /* dog4.png */,
 				D7BF8E1823930F4A006BA2AC /* SignInController.swift */,
 				6C6BA99B2392F4170001194C /* Assets.xcassets */,
 				6C6BA99D2392F4170001194C /* LaunchScreen.storyboard */,
+				6C5C42A32395E03D00EBEB35 /* ARFurniture-Bridging-Header.h */,
 				6C6BA9A02392F4170001194C /* Info.plist */,
 				6C6BA9982392F4160001194C /* ARFurniture.xcdatamodeld */,
 				6CA1E0DC23948714006BA191 /* CategoriesTabVController.swift */,
 				6C5C42A12395C29300EBEB35 /* ProfileVController.swift */,
-				6C5C42A32395E03D00EBEB35 /* ARFurniture-Bridging-Header.h */,
 				6C5C42AA2395E14C00EBEB35 /* HomeVController.swift */,
-				6C9AF3BB23973C1A00FBDE32 /* ARVController.swift */,
 				6C9AF3BD2397596600FBDE32 /* RoundButton.swift */,
 				6C7B1C252398CBD4008536AE /* Plane.swift */,
 			);
 			path = ARFurniture;
+			sourceTree = "<group>";
+		};
+		D7341456239DB53B000DA2C7 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				D73174A3239759C800FEDF94 /* dog1.png */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,25 +247,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7341466239E05A9000DA2C7 /* t0.scn in Resources */,
 				D7341455239DB1CD000DA2C7 /* stool3.scn in Resources */,
+				D734145B239DB87A000DA2C7 /* dog4.png in Resources */,
+				D7341460239DCC45000DA2C7 /* t0.png in Resources */,
+				D734145C239DB87A000DA2C7 /* dog3.png in Resources */,
 				D734144F239DB1CD000DA2C7 /* chair3.scn in Resources */,
 				D7341452239DB1CD000DA2C7 /* fabric_diff.jpg in Resources */,
 				6C6BA99F2392F4170001194C /* LaunchScreen.storyboard in Resources */,
-				6C7B1C1723989DB3008536AE /* fabric_bump.jpg in Resources */,
-				6C5C42B12395E5EB00EBEB35 /* dog4.png in Resources */,
+				D734145E239DB87A000DA2C7 /* dog2.png in Resources */,
+				D734145D239DB87A000DA2C7 /* dog1.png in Resources */,
 				6C6BA99C2392F4170001194C /* Assets.xcassets in Resources */,
-				D73174A4239759C800FEDF94 /* dog1.png in Resources */,
 				6C6BA9972392F4160001194C /* Main.storyboard in Resources */,
-				6CCF26D6239DAAF300BB5CAE /* chair3.scn in Resources */,
-				6C5C42B22395E5EB00EBEB35 /* dog2.png in Resources */,
-				6C5C42B32395E5EB00EBEB35 /* dog3.png in Resources */,
-				6CCF26D4239DA96900BB5CAE /* stool3.scn in Resources */,
-				6CCF26D0239DA3A200BB5CAE /* stool2.scn in Resources */,
-				6C7B1C242398AA9B008536AE /* chair.scn in Resources */,
-				6C7B1C1823989DB3008536AE /* fabric_diff.jpg in Resources */,
-				6CCF26CC239DA0F100BB5CAE /* stool1.scn in Resources */,
-				6C7B1C282398CCB1008536AE /* plane_grid.png in Resources */,
-				6CCF26D2239DA78B00BB5CAE /* chair2.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +270,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CA1E0DD23948714006BA191 /* CategoriesTabVController.swift in Sources */,
-				6C9AF3BC23973C1A00FBDE32 /* ARVController.swift in Sources */,
 				D717FA17239347EF00192188 /* Product+CoreDataProperties.swift in Sources */,
 				D717FA0D239336FE00192188 /* PersistentService.swift in Sources */,
 				D717FA18239347EF00192188 /* Category+CoreDataClass.swift in Sources */,
@@ -303,6 +286,7 @@
 				D7BF8E1923930F4A006BA2AC /* SignInController.swift in Sources */,
 				6C5C42B52396200400EBEB35 /* ProductDetailsVController.swift in Sources */,
 				6C6BA99A2392F4160001194C /* ARFurniture.xcdatamodeld in Sources */,
+				D7341462239E0243000DA2C7 /* ARVController.swift in Sources */,
 				6C9AF3BE2397596600FBDE32 /* RoundButton.swift in Sources */,
 				6C5C42A62395E03E00EBEB35 /* iCarousel.m in Sources */,
 				6C5C42A22395C29300EBEB35 /* ProfileVController.swift in Sources */,

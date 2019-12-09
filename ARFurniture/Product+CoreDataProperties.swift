@@ -24,4 +24,5 @@ extension Product {
     @NSManaged public var productName: String?
     @NSManaged public var productSpec: String?
     @NSManaged public var categoryname: String?
+    @NSManaged public var productImageName: String?
 }

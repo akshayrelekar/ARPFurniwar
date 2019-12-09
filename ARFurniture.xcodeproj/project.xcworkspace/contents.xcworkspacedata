@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ARFurniture.xcodeproj">
+      location = "group:../../../../../Downloads/t0.scn">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
