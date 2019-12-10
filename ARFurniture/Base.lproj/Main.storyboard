@@ -378,7 +378,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ARPDBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Khh-Qs-aSF">
-                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000091" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="eg: abc@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GLO-os-bJB">
                                 <rect key="frame" x="71" y="332" width="272" height="34"/>
@@ -401,7 +401,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7r-oq-t2s">
-                                <rect key="frame" x="20" y="519" width="374" height="50"/>
+                                <rect key="frame" x="20" y="519" width="374" height="100"/>
                                 <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
                                 <state key="normal" title="Login" image="login"/>
@@ -453,6 +453,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="dgl-eT-WFz"/>
                     <connections>
+                        <outlet property="passwordText" destination="Ta5-aX-pqO" id="MiT-rZ-byz"/>
+                        <outlet property="usernNametext" destination="GLO-os-bJB" id="FZC-xZ-2qQ"/>
                         <segue destination="mKu-pL-eWj" kind="show" identifier="AdminSegue" id="Sib-eB-ld2"/>
                         <segue destination="vnV-qR-vPU" kind="show" identifier="HomeSegue" id="dFg-b0-f9l"/>
                     </connections>
@@ -605,7 +607,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2z4-HO-UoT">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2z4-HO-UoT">
                                                         <rect key="frame" x="86" y="537" width="240" height="128"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
@@ -624,7 +626,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KoD-C0-A0P">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KoD-C0-A0P">
                                                         <rect key="frame" x="86" y="739" width="240" height="128"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
@@ -1026,7 +1028,7 @@
                                                             <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="gOw-yx-xrx" kind="show" id="kbz-UP-8tu"/>
+                                                            <segue destination="gOw-yx-xrx" kind="show" identifier="BedSegue" id="kbz-UP-8tu"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxS-IX-w3p">
@@ -1037,7 +1039,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="gOw-yx-xrx" kind="show" id="GyV-gh-Bu0"/>
+                                                            <segue destination="gOw-yx-xrx" kind="show" identifier="BeanBagSegue" id="GyV-gh-Bu0"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3Y-d8-lQ1">
@@ -1048,7 +1050,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="gOw-yx-xrx" kind="show" id="ulG-zq-Tfd"/>
+                                                            <segue destination="gOw-yx-xrx" kind="show" identifier="TableSegue" id="ulG-zq-Tfd"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QsZ-n9-P4a">
@@ -1059,7 +1061,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="gOw-yx-xrx" kind="show" id="995-mJ-zJz"/>
+                                                            <segue destination="gOw-yx-xrx" kind="show" identifier="ChairSegue" id="995-mJ-zJz"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymU-BP-iyn">
@@ -1070,7 +1072,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="gOw-yx-xrx" kind="show" id="BNF-cX-Gx6"/>
+                                                            <segue destination="gOw-yx-xrx" kind="show" identifier="SofaSegue" id="BNF-cX-Gx6"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1135,7 +1137,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProductCell" editingAccessoryType="detailDisclosureButton" textLabel="aUG-Ta-JOI" detailTextLabel="rhb-rI-1Vh" style="IBUITableViewCellStyleSubtitle" id="QI8-DW-QXl">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProductCell" editingAccessoryType="detailDisclosureButton" focusStyle="custom" textLabel="aUG-Ta-JOI" detailTextLabel="9bD-jB-oSs" style="IBUITableViewCellStyleSubtitle" id="QI8-DW-QXl">
                                 <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QI8-DW-QXl" id="GhY-4d-VfE">
@@ -1149,7 +1151,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rhb-rI-1Vh">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9bD-jB-oSs">
                                             <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -1230,7 +1232,7 @@
         <image name="signupBackground" width="3500" height="2333"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="995-mJ-zJz"/>
+        <segue reference="ulG-zq-Tfd"/>
         <segue reference="oXx-93-jPK"/>
         <segue reference="aVk-Mk-1zH"/>
     </inferredMetricsTieBreakers>

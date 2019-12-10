@@ -10,8 +10,9 @@ import UIKit
 import CoreData
 
 class ProductListVController: UITableViewController,UISearchResultsUpdating,UISearchBarDelegate {
-
-    var ProductArr:[Product] = [Product]()
+    
+    var SegueProduct:[Product]?
+    var ProductArr:[Product] = []
     
     var filteredObjects = [Product]()
     
@@ -42,18 +43,18 @@ class ProductListVController: UITableViewController,UISearchResultsUpdating,UISe
           self.definesPresentationContext = true
           tableView.dataSource = self
           tableView.delegate = self
-         
-          let fetchRequest:NSFetchRequest<Product> = Product.fetchRequest()
-          do{
-              let e = try PersistentService.context.fetch(fetchRequest)
-              ProductArr = e
-              self.tableView.reloadData()
-          }catch{
-              print("cannot fetch the saved event")
-          }
+         self.tableView.rowHeight = 145.0
         
+        if(SegueProduct?.count ?? ProductArr.count > 0){
+          ProductArr = SegueProduct!
+        }
+        
+        if(ProductArr.count > 0){
+          self.navigationItem.title = ProductArr[0].categoryname
+        }
     }
 
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -83,12 +84,13 @@ class ProductListVController: UITableViewController,UISearchResultsUpdating,UISe
                if(isfiltering){
                    object = filteredObjects[indexPath.row]
                }else{
-                   object = ProductArr[indexPath.row]
+                object = ProductArr[indexPath.row]
                }
                cell.textLabel?.text = object.productName
                //        cell.imageView?.image = UIImage(named: "p\(indexPath.row).jpg")
-               cell.imageView?.image = UIImage(data:ProductArr[indexPath.row].productImage! )
-               cell.detailTextLabel?.text = object.productDesc
+        cell.imageView?.image = UIImage(data:ProductArr[indexPath.row].productImage! )
+               cell.detailTextLabel?.text = "$ " +
+                String(format: "%\(0.2)f", object.productCost)
                return cell
     }
     
@@ -106,9 +108,9 @@ class ProductListVController: UITableViewController,UISearchResultsUpdating,UISe
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-           PersistentService.persistentContainer.viewContext.delete(ProductArr[indexPath.row])
+            PersistentService.persistentContainer.viewContext.delete(ProductArr[indexPath.row])
                         PersistentService.saveContext()
-                           ProductArr.remove(at: indexPath.row)
+//                           ProductArr.remove(at: indexPath.row)
             //            ImageArray.remove(at: indexPath.row)
                        
                         tableView.deleteRows(at: [indexPath], with: .fade)

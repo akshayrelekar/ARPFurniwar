@@ -48,8 +48,9 @@ class ProductDetailsVController: UIViewController {
         productNameLabel.text = prodname
         productdesc.text = proddesc
         productspec.text = prodspecs
-        priceNumberLabel.text = String(format:"%f", prodprice!)
+        priceNumberLabel.text = String(format:"%\(0.2)f", prodprice!)
         
+      //  priceNumberLabel.font = UIFont(name: String, size: <#T##CGFloat#>)
         
         
     }

@@ -128,6 +128,7 @@ class AddProductsVController: UIViewController,UIPickerViewDelegate,UIPickerView
             p.productDesc = desc
             p.productSpec = spec
             p.productCost = Double(cost!) as! Double
+            //    Double(round(x/10000))
         
             switch selectedCategory {
                 case "Tables":
@@ -141,25 +142,30 @@ class AddProductsVController: UIViewController,UIPickerViewDelegate,UIPickerView
                 break
                 case "Beds":
                     p.productId = Int16(totalproducts.count)
-                  p.productImage = UIImage(named: "t\(BedArray.count).png")?.pngData()
+                    p.productImage = UIImage(named: "t\(BedArray.count).png")?.pngData()
+                    p.productImageName = "b\(BedArray.count)"
                     BedArray.append(p)
                     PersistentService.saveContext()
                     break
                 case "Chairs/Stools":
                      p.productId = Int16(totalproducts.count)
-                  p.productImage = UIImage(named: "t\(ChairArray.count).png")?.pngData()
+                     p.productImage = UIImage(named: "c\(ChairArray.count).png")?.pngData()
+                     p.productImageName = "c\(ChairArray.count)"
                     ChairArray.append(p)
+                    print(p.productImage)
                     PersistentService.saveContext()
                     break
                 case "Sofa Sets":
                      p.productId = Int16(totalproducts.count)
-                  p.productImage = UIImage(named: "t\(SofaArray.count).png")?.pngData()
+                     p.productImage = UIImage(named: "s\(SofaArray.count).png")?.pngData()
+                      p.productImageName = "s\(SofaArray.count)"
                     SofaArray.append(p)
                     PersistentService.saveContext()
                     break
                 case "Bean Bags":
                      p.productId = Int16(totalproducts.count)
-                  p.productImage = UIImage(named: "t\(BeanArray.count).png")?.pngData()
+                     p.productImage = UIImage(named: "bb\(BeanArray.count).png")?.pngData()
+                    p.productImageName = "bb\(BeanArray.count)"
                     BeanArray.append(p)
                     PersistentService.saveContext()
                     break

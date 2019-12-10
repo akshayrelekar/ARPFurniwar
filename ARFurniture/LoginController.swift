@@ -12,12 +12,20 @@ import CoreData
 var users:[User] = [User]()
 class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
+    
+    @IBOutlet var usernNametext: UITextField!
+    @IBOutlet var passwordText: UITextField!
+    
     var username:String = ""
     var password:String = ""
     var flag:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(SignInController.keyboardWillShow(notification:)), name: UIWindow.keyboardWillShowNotification, object: nil)
+       
+       NotificationCenter.default.addObserver(self, selector: #selector(SignInController.keyboardWillShow(notification:)), name: UIWindow.keyboardWillShowNotification, object: nil)
+        
+        usernNametext.text = "p@gmail.com"
+        passwordText.text = "payal"
         NotificationCenter.default.addObserver(self, selector: #selector(SignInController.keyboardWillHide(notification:)), name: UIWindow.keyboardWillHideNotification, object: nil)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SignInController.tapped(tapGesture:)))
         view.addGestureRecognizer(tapGesture)
@@ -104,7 +112,7 @@ class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControl
         print("I am here")
         print("--\(users.count)")
             for u in users{
-                print(" $$ - \(u.emailaddress)")
+                print(" $$ - \(u.password)")
                 if(u.emailaddress == username){
                     let pswd = u.password
                     flag = 1
