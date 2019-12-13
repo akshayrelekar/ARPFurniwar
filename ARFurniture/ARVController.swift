@@ -15,50 +15,108 @@ class ARVController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     
     @IBOutlet weak var addObjectBtn: UIButton!
     @IBOutlet weak var ARSceneView: ARSCNView!
+    @IBOutlet weak var infoLabel: UILabel!
+    private var hud : MBProgressHUD!
+    //let configuration = ARWorldTrackingConfiguration()
     var touchPoint : CGPoint?
-    let configuration = ARWorldTrackingConfiguration()
+    var object: SCNNode!
+    var count = 1
+    var currentAngleY: Float = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.ARSceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
-        self.ARSceneView.session.run(configuration)
+        ARSceneView.showsStatistics = true
         self.ARSceneView.autoenablesDefaultLighting = true
-        self.ARSceneView.automaticallyUpdatesLighting = true
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ARVController.tapped(tapGesture:)))
-        view.addGestureRecognizer(tapGesture)
-        //addObjectBtn.layer.cornerRadius = addObjectBtn.bounds.width / 2
-        
+        self.ARSceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+        let scene = ARSceneView.scene
+        ARSceneView.delegate = self
+        self.hud = MBProgressHUD.showAdded(to: self.ARSceneView, animated: true)
+        self.hud.label.text = "Detecting Plane"
+        registerGestureRecognizers()
     }
     
-    @objc func tapped(tapGesture: UITapGestureRecognizer){
-        
-        let touchPosition = tapGesture.location(in: ARSceneView)
-        
-        touchPoint = tapGesture.location(in: self.view)
-        print("Touch coordinates: (\(touchPoint!.x),\(touchPoint!.y))")
-        guard let sofaScene = SCNScene(named: "Barstool.scn"), let sofaNode = sofaScene.rootNode.childNode(withName: "Barstool", recursively: true) else {
-            print("not found")
-            return
-        }
-        sofaNode.position = SCNVector3(0, -0.5, -0.6)
-        self.ARSceneView.scene.rootNode.addChildNode(sofaNode)
-        
+    func registerGestureRecognizers(){
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
+        //let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panned))
+        let rotateGestureRecognizer = UIRotationGestureRecognizer(target: self, action: #selector(panned))
+        self.ARSceneView.addGestureRecognizer(tapGestureRecognizer)
+        //self.ARSceneView.addGestureRecognizer(panGestureRecognizer)
+        self.ARSceneView.addGestureRecognizer(rotateGestureRecognizer)
     }
     
-    @IBAction func addObjectBtnPressed(_ sender: Any) {
-//        let node = SCNNode()
-//        node.geometry = SCNPyramid(width: 0.1, height: 0.2, length: 0.1)
-//        node.geometry?.firstMaterial?.diffuse.contents = UIColor.red
-//        node.geometry?.firstMaterial?.specular.contents = UIColor.white
-//        node.position = SCNVector3(0,0,-0.5)
-//        self.ARSceneView.scene.rootNode.addChildNode(node)
+    @objc func tapped(recognizer: UITapGestureRecognizer){
         
-        guard let sofaScene = SCNScene(named: "chair3.scn"), let sofaNode = sofaScene.rootNode.childNode(withName: "chair3", recursively: true) else {
-            print("not found")
-            return
+        guard let sceneView = recognizer.view as? ARSCNView else {return}
+        let touch = recognizer.location(in: sceneView)
+        let hitTestResults = sceneView.hitTest(touch, types: .existingPlane)
+        
+        if count == 1{
+            if let hitTest = hitTestResults.first {
+                let arscene = SCNScene(named: "chair3.scn")
+                guard let arnode = arscene?.rootNode.childNode(withName: "chair3", recursively: true) else {return}
+                arnode.position = SCNVector3(hitTest.worldTransform.columns.3.x, hitTest.worldTransform.columns.3.y, hitTest.worldTransform.columns.3.z)
+                self.ARSceneView.scene.rootNode.addChildNode(arnode)
+                count += 1
+            }
         }
-        sofaNode.position = SCNVector3(1, -0.5, -0.6)
-        self.ARSceneView.scene.rootNode.addChildNode(sofaNode)
+    }
+    
+    @objc func panned(recognizer: UIRotationGestureRecognizer){
+        recognizer.isEnabled = true
+        if recognizer.state == .changed{
+            guard let sceneView = recognizer.view as? ARSCNView else {return}
+            let touch = recognizer.location(in: sceneView)
+            let hitTestResults = sceneView.hitTest(touch, options: nil)
+            if let hitTest = hitTestResults.first{
+                let arnode = hitTest.node
+                let rotation = Float(recognizer.rotation)
+                //let translation = recognizer.translation(in: recognizer.view!)
+                //var newAngleY = (Float)(translation.x)*(Float)(Double.pi)/180.0
+                var newAngleY = currentAngleY + rotation
+                //newAngleY += currentAngleY
+                arnode.eulerAngles.y = newAngleY
+                if(recognizer.state == .ended){
+                    currentAngleY = newAngleY
+                    //recognizer.isEnabled = false
+                }
+            }
+        }
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+
+        guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
+
+            DispatchQueue.main.async {
+                self.hud.animationType = .zoomOut
+                self.hud.label.text = "Plane Detected"
+                self.hud.hide(animated: true, afterDelay: 1.5)
+            }
+    }
+    
+    func sessionWasInterrupted(_ session: ARSession) {
+            self.hud.label.text = "Session was interrupted"
+    }
+     
+    func sessionInterruptionEnded(_ session: ARSession) {
+        self.hud.label.text = "Session interruption ended"
+        resetTracking()
+    }
+ 
+    func session(_ session: ARSession, didFailWithError error: Error) {
+        self.hud.label.text = "Session failed: \(error.localizedDescription)"
+        resetTracking()
+    }
+ 
+     func resetTracking() {
+        let configuration = ARWorldTrackingConfiguration()
+        configuration.planeDetection = .horizontal
+        ARSceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
+    }
+     
+    override func viewWillAppear(_ animated: Bool) {
+        let configuration = ARWorldTrackingConfiguration()
+        configuration.planeDetection = .horizontal
+        ARSceneView.session.run(configuration)
     }
 }

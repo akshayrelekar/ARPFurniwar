@@ -533,6 +533,10 @@
                         <viewLayoutGuide key="safeArea" id="geb-7D-bl7"/>
                     </view>
                     <navigationItem key="navigationItem" id="dgl-eT-WFz"/>
+                    <connections>
+                        <outlet property="passwordtext" destination="Ta5-aX-pqO" id="fjF-4Z-nXD"/>
+                        <outlet property="userNametext" destination="GLO-os-bJB" id="XXl-u9-4tX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2B-kf-sI7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -857,39 +861,12 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XYr-Dp-dln">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6FH-Ok-5ZF" customClass="RoundButton" customModule="ARFurniture" customModuleProvider="target">
-                                <rect key="frame" x="147" y="643" width="120" height="119"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="jh9-ts-ZoU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Add">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="39"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="addObjectBtnPressed:" destination="SXV-Ia-03k" eventType="touchUpInside" id="Uz6-Cd-Xep"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="XYr-Dp-dln" firstAttribute="leading" secondItem="P5g-LD-YCH" secondAttribute="leading" id="2mp-VE-AhB"/>
                             <constraint firstItem="XYr-Dp-dln" firstAttribute="top" secondItem="P5g-LD-YCH" secondAttribute="top" id="DLP-El-WeK"/>
-                            <constraint firstItem="6FH-Ok-5ZF" firstAttribute="leading" secondItem="P5g-LD-YCH" secondAttribute="leading" constant="147" id="ZHE-gf-k8Z"/>
                             <constraint firstItem="XYr-Dp-dln" firstAttribute="trailing" secondItem="P5g-LD-YCH" secondAttribute="trailing" id="fEc-Wh-pGd"/>
-                            <constraint firstItem="P5g-LD-YCH" firstAttribute="bottom" secondItem="6FH-Ok-5ZF" secondAttribute="bottom" constant="46" id="gFw-9u-OAM"/>
-                            <constraint firstItem="P5g-LD-YCH" firstAttribute="trailing" secondItem="6FH-Ok-5ZF" secondAttribute="trailing" constant="147" id="gwT-75-O9W"/>
                             <constraint firstAttribute="bottom" secondItem="XYr-Dp-dln" secondAttribute="bottom" id="i5X-Jp-uWd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="P5g-LD-YCH"/>
@@ -897,7 +874,6 @@
                     <navigationItem key="navigationItem" id="QH8-aA-M7U"/>
                     <connections>
                         <outlet property="ARSceneView" destination="XYr-Dp-dln" id="cnq-oD-KcH"/>
-                        <outlet property="addObjectBtn" destination="6FH-Ok-5ZF" id="4P3-Ee-k6d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uI8-iO-BJt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
