@@ -19,6 +19,7 @@ class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControl
     var username:String = ""
     var password:String = ""
     var flag:Int = 0
+   static var selecteduserid:Int16?
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -75,7 +76,7 @@ class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControl
         }
         else if(iden == "HomeSegue"){
             if let vd1 = segue.destination as? HomeVController{
-                print("Inisde home segue")
+                vd1.userid = LoginController.selecteduserid
             }
         }
     }
@@ -120,9 +121,9 @@ class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControl
                         if (username == "admin@gmail.com" && pswd == "admin"){
                             
                             self.performSegue(withIdentifier: "AdminSegue", sender: self)
-
                         }
                         else{
+                            LoginController.selecteduserid = u.userId
                              self.performSegue(withIdentifier: "HomeSegue", sender: self)
                         }
                     }

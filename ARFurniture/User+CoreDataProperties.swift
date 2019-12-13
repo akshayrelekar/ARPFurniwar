@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.swift
 //  ARFurniture
 //
-//  Created by Payal Zanwar on 11/30/19.
+//  Created by Payal Zanwar on 12/11/19.
 //  Copyright © 2019 Akshay Relekar. All rights reserved.
 //
 //
@@ -22,7 +22,7 @@ extension User {
     @NSManaged public var gender: String?
     @NSManaged public var password: String?
     @NSManaged public var phone: String?
-    @NSManaged public var userId: Int16
     @NSManaged public var profimg: Data?
+    @NSManaged public var userId: Int16
 
 }

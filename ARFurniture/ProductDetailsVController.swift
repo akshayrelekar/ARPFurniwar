@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import CoreData
 
+ 
 class ProductDetailsVController: UIViewController {
 
     var prodname:String?
@@ -16,7 +18,9 @@ class ProductDetailsVController: UIViewController {
     var prodspecs:String?
     var productphoto:UIImage?
     var productImgName:String?
-    
+    var Carts:[Cart] = [Cart]()
+    var flag = 0
+   
     @IBOutlet weak var toARButton: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var specsLabel: UILabel!
@@ -50,12 +54,52 @@ class ProductDetailsVController: UIViewController {
         productspec.text = prodspecs
         priceNumberLabel.text = String(format:"%\(0.2)f", prodprice!)
         
-      //  priceNumberLabel.font = UIFont(name: String, size: <#T##CGFloat#>)
+        productNameLabel.font = UIFont.boldSystemFont(ofSize: 35)
         
+        let fetchRequest:NSFetchRequest<Cart> = Cart.fetchRequest()
+        do{
+            let e = try PersistentService.context.fetch(fetchRequest)
+            Carts = e
+            
+        }catch{
+            print("cannot fetch the saved event")
+        }
         
     }
     
 
+    @IBAction func onAddCart(_ sender: Any) {
+        
+        for cart in Carts{
+            if(cart.loggeduserid == LoginController.selecteduserid){
+                flag = 1
+                let cartitem = CartItem(context: PersistentService.context)
+                       cartitem.products?.productName = prodname
+                       cartitem.products?.productCost = prodprice!
+                      
+                  
+//                        cart.cartitem?.append(cartitem)
+                 PersistentService.saveContext()
+            }
+        }
+        
+        if(flag == 0){
+            let cartitem = CartItem(context: PersistentService.context)
+            cartitem.products?.productName = prodname
+            cartitem.products?.productCost = prodprice!
+           
+            let cart = Cart(context: PersistentService.context)
+            cart.loggeduserid = LoginController.selecteduserid!
+           
+//            cart.cartitem?.append(cartitem)
+           
+            Carts.append(cart) // to be implemented
+            PersistentService.saveContext()
+        }
+        
+       
+       
+    }
     
     // MARK: - Navigation
 
@@ -72,6 +116,17 @@ class ProductDetailsVController: UIViewController {
                     }
                     
                 }
+                else if(id == "CartSegue"){
+                    
+            if let vd = segue.destination as? CartViewController {
+                for c in Carts{
+                    if(c.loggeduserid == LoginController.selecteduserid){
+                        print("--\(c.item?.count)")
+                        vd.c = c
+                    }
+                }
+            }
+        }
             }
     
     

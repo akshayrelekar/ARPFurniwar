@@ -11,6 +11,9 @@ import UIKit
 class HomeVController: UIViewController, iCarouselDelegate, iCarouselDataSource,UINavigationControllerDelegate {
     
     
+      var userid:Int16?
+    
+   
     
     @IBOutlet weak var carouselView: iCarousel!
     var producti : UIImageView?
@@ -27,6 +30,9 @@ class HomeVController: UIViewController, iCarouselDelegate, iCarouselDataSource,
         carouselView.reloadData()
         carouselView.type = .coverFlow
         
+       
+        
+       
         
         // Do any additional setup after loading the view.
     }

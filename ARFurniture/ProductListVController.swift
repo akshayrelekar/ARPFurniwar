@@ -51,6 +51,7 @@ class ProductListVController: UITableViewController,UISearchResultsUpdating,UISe
         
         if(ProductArr.count > 0){
           self.navigationItem.title = ProductArr[0].categoryname
+           
         }
     }
 
@@ -87,10 +88,13 @@ class ProductListVController: UITableViewController,UISearchResultsUpdating,UISe
                 object = ProductArr[indexPath.row]
                }
                cell.textLabel?.text = object.productName
+//        UIFont *myFont = [ UIFont fontWithName: @"Arial" size: 18.0 ];
+//        cell.textLabel.font  = myFont;
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 20)
                //        cell.imageView?.image = UIImage(named: "p\(indexPath.row).jpg")
         cell.imageView?.image = UIImage(data:ProductArr[indexPath.row].productImage! )
-               cell.detailTextLabel?.text = "$ " +
-                String(format: "%\(0.2)f", object.productCost)
+        cell.detailTextLabel?.text = "$ " + String(format: "%\(0.2)f", object.productCost)
+        cell.detailTextLabel?.font = UIFont.italicSystemFont(ofSize: 16)
                return cell
     }
     

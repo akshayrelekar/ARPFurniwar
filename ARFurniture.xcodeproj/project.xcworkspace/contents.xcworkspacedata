@@ -2,39 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../ARFurniture/b0.png">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/payalzanwar/Documents/SmartPhoneBasedDevelopment/Project/ARPFurniwar/ARFurniture/c0.png">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/payalzanwar/Documents/SmartPhoneBasedDevelopment/Project/ARPFurniwar/ARFurniture/c0.scn">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/payalzanwar/Documents/SmartPhoneBasedDevelopment/Project/ARPFurniwar/ARFurniture/c1.png">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/payalzanwar/Documents/SmartPhoneBasedDevelopment/Project/ARPFurniwar/ARFurniture/c1.scn">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/payalzanwar/Documents/SmartPhoneBasedDevelopment/Project/ARPFurniwar/ARFurniture/c2.png">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/payalzanwar/Documents/SmartPhoneBasedDevelopment/Project/ARPFurniwar/ARFurniture/c2.scn">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/payalzanwar/Documents/SmartPhoneBasedDevelopment/Project/ARPFurniwar/ARFurniture/c3.png">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/payalzanwar/Documents/SmartPhoneBasedDevelopment/Project/ARPFurniwar/ARFurniture/c3.scn">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/payalzanwar/Documents/SmartPhoneBasedDevelopment/Project/ARPFurniwar/ARFurniture/c4.png">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/payalzanwar/Documents/SmartPhoneBasedDevelopment/Project/ARPFurniwar/ARFurniture/c4.scn">
-   </FileRef>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
