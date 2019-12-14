@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FA0951FD9D4EF9C124618E3 /* Pods_ARFurniture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C8A1445553F7423DD7769C /* Pods_ARFurniture.framework */; };
 		6C5C42A22395C29300EBEB35 /* ProfileVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C42A12395C29300EBEB35 /* ProfileVController.swift */; };
 		6C5C42A62395E03E00EBEB35 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5C42A52395E03E00EBEB35 /* iCarousel.m */; };
 		6C5C42A92395E0AE00EBEB35 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C5C42A82395E0AE00EBEB35 /* QuartzCore.framework */; };
@@ -23,11 +24,11 @@
 		6C6BA99A2392F4160001194C /* ARFurniture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BA9982392F4160001194C /* ARFurniture.xcdatamodeld */; };
 		6C6BA99C2392F4170001194C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BA99B2392F4170001194C /* Assets.xcassets */; };
 		6C6BA99F2392F4170001194C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C6BA99D2392F4170001194C /* LaunchScreen.storyboard */; };
+		6C7A48B823A3429200A089F8 /* CartVControllerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7A48B723A3429200A089F8 /* CartVControllerr.swift */; };
 		6C7B1C1723989DB3008536AE /* fabric_bump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C7B1C1523989DB2008536AE /* fabric_bump.jpg */; };
 		6C7B1C1823989DB3008536AE /* fabric_diff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C7B1C1623989DB3008536AE /* fabric_diff.jpg */; };
 		6C7B1C242398AA9B008536AE /* chair.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C7B1C232398AA9B008536AE /* chair.scn */; };
 		6C7B1C262398CBD4008536AE /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7B1C252398CBD4008536AE /* Plane.swift */; };
-		6C7B1C282398CCB1008536AE /* plane_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C7B1C272398CCB1008536AE /* plane_grid.png */; };
 		6C9AF3BC23973C1A00FBDE32 /* ARVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AF3BB23973C1A00FBDE32 /* ARVController.swift */; };
 		6C9AF3BE2397596600FBDE32 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9AF3BD2397596600FBDE32 /* RoundButton.swift */; };
 		6CA1E0DD23948714006BA191 /* CategoriesTabVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1E0DC23948714006BA191 /* CategoriesTabVController.swift */; };
@@ -50,6 +51,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52C8A1445553F7423DD7769C /* Pods_ARFurniture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARFurniture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		574A07B6263C39A16A3BBE83 /* Pods-ARFurniture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARFurniture.release.xcconfig"; path = "Target Support Files/Pods-ARFurniture/Pods-ARFurniture.release.xcconfig"; sourceTree = "<group>"; };
 		6C5C42A12395C29300EBEB35 /* ProfileVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVController.swift; sourceTree = "<group>"; };
 		6C5C42A32395E03D00EBEB35 /* ARFurniture-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARFurniture-Bridging-Header.h"; sourceTree = "<group>"; };
 		6C5C42A42395E03D00EBEB35 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = SOURCE_ROOT; };
@@ -70,11 +73,11 @@
 		6C6BA99B2392F4170001194C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C6BA99E2392F4170001194C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C6BA9A02392F4170001194C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C7A48B723A3429200A089F8 /* CartVControllerr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVControllerr.swift; sourceTree = "<group>"; };
 		6C7B1C1523989DB2008536AE /* fabric_bump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fabric_bump.jpg; path = ../../Saba_Livingston_Armchair/fabric_bump.jpg; sourceTree = "<group>"; };
 		6C7B1C1623989DB3008536AE /* fabric_diff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fabric_diff.jpg; path = ../../Saba_Livingston_Armchair/fabric_diff.jpg; sourceTree = "<group>"; };
 		6C7B1C232398AA9B008536AE /* chair.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = chair.scn; path = ../../../../../../Users/akshayrelekar/Downloads/chair.scn; sourceTree = "<group>"; };
 		6C7B1C252398CBD4008536AE /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
-		6C7B1C272398CCB1008536AE /* plane_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane_grid.png; sourceTree = "<group>"; };
 		6C9AF3BB23973C1A00FBDE32 /* ARVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVController.swift; sourceTree = "<group>"; };
 		6C9AF3BD2397596600FBDE32 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		6CA1E0DC23948714006BA191 /* CategoriesTabVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTabVController.swift; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		D717FA13239347EF00192188 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D717FA1A2393518600192188 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		D7BF8E1823930F4A006BA2AC /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
+		ECBB567656BA24D7242ACE6F /* Pods-ARFurniture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARFurniture.debug.xcconfig"; path = "Target Support Files/Pods-ARFurniture/Pods-ARFurniture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C5C42A92395E0AE00EBEB35 /* QuartzCore.framework in Frameworks */,
+				1FA0951FD9D4EF9C124618E3 /* Pods_ARFurniture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				6C5C42A82395E0AE00EBEB35 /* QuartzCore.framework */,
+				52C8A1445553F7423DD7769C /* Pods_ARFurniture.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,6 +129,7 @@
 				6C6BA98E2392F4160001194C /* ARFurniture */,
 				6C6BA98D2392F4160001194C /* Products */,
 				6C5C42A72395E0AD00EBEB35 /* Frameworks */,
+				A30D3AF081EA67F69DCEEFC4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,7 +151,6 @@
 				6CCF26D1239DA78B00BB5CAE /* chair2.scn */,
 				6CCF26D5239DAAF300BB5CAE /* chair3.scn */,
 				6CCF26D7239DC06900BB5CAE /* bed1.scn */,
-				6C7B1C272398CCB1008536AE /* plane_grid.png */,
 				6CCF26D9239E0C2900BB5CAE /* MBProgressHUD.h */,
 				6CCF26DA239E0C2900BB5CAE /* MBProgressHUD.m */,
 				6C7B1C1523989DB2008536AE /* fabric_bump.jpg */,
@@ -180,8 +186,18 @@
 				6C9AF3BB23973C1A00FBDE32 /* ARVController.swift */,
 				6C9AF3BD2397596600FBDE32 /* RoundButton.swift */,
 				6C7B1C252398CBD4008536AE /* Plane.swift */,
+				6C7A48B723A3429200A089F8 /* CartVControllerr.swift */,
 			);
 			path = ARFurniture;
+			sourceTree = "<group>";
+		};
+		A30D3AF081EA67F69DCEEFC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECBB567656BA24D7242ACE6F /* Pods-ARFurniture.debug.xcconfig */,
+				574A07B6263C39A16A3BBE83 /* Pods-ARFurniture.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C6BA9A32392F4170001194C /* Build configuration list for PBXNativeTarget "ARFurniture" */;
 			buildPhases = (
+				DFB5E4561D2A39A0C7626C72 /* [CP] Check Pods Manifest.lock */,
 				6C6BA9882392F4160001194C /* Sources */,
 				6C6BA9892392F4160001194C /* Frameworks */,
 				6C6BA98A2392F4160001194C /* Resources */,
+				590E26DDDD32534906CAA77E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,12 +276,53 @@
 				6C7B1C242398AA9B008536AE /* chair.scn in Resources */,
 				6C7B1C1823989DB3008536AE /* fabric_diff.jpg in Resources */,
 				6CCF26CC239DA0F100BB5CAE /* stool1.scn in Resources */,
-				6C7B1C282398CCB1008536AE /* plane_grid.png in Resources */,
 				6CCF26D2239DA78B00BB5CAE /* chair2.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		590E26DDDD32534906CAA77E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARFurniture/Pods-ARFurniture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARFurniture/Pods-ARFurniture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARFurniture/Pods-ARFurniture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFB5E4561D2A39A0C7626C72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARFurniture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6C6BA9882392F4160001194C /* Sources */ = {
@@ -281,6 +340,7 @@
 				6C5C42AB2395E14C00EBEB35 /* HomeVController.swift in Sources */,
 				6C6BA9902392F4160001194C /* AppDelegate.swift in Sources */,
 				6C6BA9922392F4160001194C /* SceneDelegate.swift in Sources */,
+				6C7A48B823A3429200A089F8 /* CartVControllerr.swift in Sources */,
 				D717FA19239347EF00192188 /* Category+CoreDataProperties.swift in Sources */,
 				D717FA16239347EF00192188 /* Product+CoreDataClass.swift in Sources */,
 				6C7B1C262398CBD4008536AE /* Plane.swift in Sources */,
@@ -433,6 +493,7 @@
 		};
 		6C6BA9A42392F4170001194C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECBB567656BA24D7242ACE6F /* Pods-ARFurniture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -457,6 +518,7 @@
 		};
 		6C6BA9A52392F4170001194C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574A07B6263C39A16A3BBE83 /* Pods-ARFurniture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

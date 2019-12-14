@@ -10,8 +10,6 @@ import UIKit
 
 class HomeVController: UIViewController, iCarouselDelegate, iCarouselDataSource,UINavigationControllerDelegate {
     
-    
-    
     @IBOutlet weak var carouselView: iCarousel!
     var producti : UIImageView?
     var images : [UIImage] = [
@@ -21,12 +19,64 @@ class HomeVController: UIViewController, iCarouselDelegate, iCarouselDataSource,
         UIImage(named: "dog4.png")!
     ]
     
+    @IBOutlet weak var bedButton: UIButton!
+    @IBOutlet weak var beanBagButton: UIButton!
+    @IBOutlet weak var sofaButton: UIButton!
+    @IBOutlet weak var chairButton: UIButton!
+    @IBOutlet weak var tableButton: UIButton!
+    
+    @IBOutlet weak var beanBagLabel: UILabel!
+    @IBOutlet weak var bedLabel: UILabel!
+    @IBOutlet weak var sofaLabel: UILabel!
+    @IBOutlet weak var chairLabel: UILabel!
+    @IBOutlet weak var tableLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        beanBagLabel.adjustsFontSizeToFitWidth = true
+//        bedLabel.adjustsFontSizeToFitWidth = true
+//        sofaLabel.adjustsFontSizeToFitWidth = true
+//        chairLabel.adjustsFontSizeToFitWidth = true
+//        tableLabel.adjustsFontSizeToFitWidth = true
+        
         carouselView.dataSource = self
         carouselView.reloadData()
         carouselView.type = .coverFlow
+        bedButton.layer.shadowColor = UIColor.black.cgColor
+        bedButton.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
+        bedButton.layer.shadowOpacity = 1.0
+        bedButton.layer.shadowRadius = 5.0
+        bedButton.layer.masksToBounds = false
+        bedButton.layer.cornerRadius = 4.0
         
+        beanBagButton.layer.shadowColor = UIColor.black.cgColor
+        beanBagButton.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+        beanBagButton.layer.shadowOpacity = 1.0
+        beanBagButton.layer.shadowRadius = 5.0
+        beanBagButton.layer.masksToBounds = false
+        beanBagButton.layer.cornerRadius = 4.0
+        
+        sofaButton.layer.shadowColor = UIColor.black.cgColor
+        sofaButton.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+        sofaButton.layer.shadowOpacity = 1.0
+        sofaButton.layer.shadowRadius = 5.0
+        sofaButton.layer.masksToBounds = false
+        sofaButton.layer.cornerRadius = 4.0
+        
+        chairButton.layer.shadowColor = UIColor.black.cgColor
+        chairButton.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+        chairButton.layer.shadowOpacity = 1.0
+        chairButton.layer.shadowRadius = 5.0
+        chairButton.layer.masksToBounds = false
+        chairButton.layer.cornerRadius = 4.0
+        
+        tableButton.layer.shadowColor = UIColor.black.cgColor
+        tableButton.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+        tableButton.layer.shadowOpacity = 1.0
+        tableButton.layer.shadowRadius = 5.0
+        tableButton.layer.masksToBounds = false
+        tableButton.layer.cornerRadius = 4.0
         
         // Do any additional setup after loading the view.
     }
