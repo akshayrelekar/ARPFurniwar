@@ -381,7 +381,7 @@
         <!--Cart-->
         <scene sceneID="KZH-Ax-4Vq">
             <objects>
-                <viewController id="lqZ-du-jUf" customClass="CartVController" customModule="ARFurniture" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lqZ-du-jUf" customClass="CartVControllerr" customModule="ARFurniture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y4L-4T-2Q1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
