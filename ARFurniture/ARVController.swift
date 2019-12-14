@@ -22,6 +22,7 @@ class ARVController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
     var object: SCNNode!
     var count = 1
     var currentAngleY: Float = 0.0
+     var prodimgname:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,8 +53,8 @@ class ARVController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         
         if count == 1{
             if let hitTest = hitTestResults.first {
-                let arscene = SCNScene(named: "chair3.scn")
-                guard let arnode = arscene?.rootNode.childNode(withName: "chair3", recursively: true) else {return}
+                let arscene = SCNScene(named: "\(prodimgname!).scn")
+                guard let arnode = arscene?.rootNode.childNode(withName: "\(prodimgname!)", recursively: true) else {return}
                 arnode.position = SCNVector3(hitTest.worldTransform.columns.3.x, hitTest.worldTransform.columns.3.y, hitTest.worldTransform.columns.3.z)
                 self.ARSceneView.scene.rootNode.addChildNode(arnode)
                 count += 1

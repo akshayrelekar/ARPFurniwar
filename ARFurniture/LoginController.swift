@@ -12,16 +12,20 @@ import CoreData
 var users:[User] = [User]()
 class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
-    @IBOutlet weak var userNametext: UITextField!
-    @IBOutlet weak var passwordtext: UITextField!
+    @IBOutlet var usernNametext: UITextField!
+    @IBOutlet var passwordText: UITextField!
+    
     var username:String = ""
     var password:String = ""
-    
+    var flag:Int = 0
+   static var selecteduserid:Int16?
     override func viewDidLoad() {
         super.viewDidLoad()
-        userNametext.text = "payal@gmail.com"
-        passwordtext.text = "payal"
-        NotificationCenter.default.addObserver(self, selector: #selector(SignInController.keyboardWillShow(notification:)), name: UIWindow.keyboardWillShowNotification, object: nil)
+       
+       NotificationCenter.default.addObserver(self, selector: #selector(SignInController.keyboardWillShow(notification:)), name: UIWindow.keyboardWillShowNotification, object: nil)
+        
+        usernNametext.text = "p@gmail.com"
+        passwordText.text = "payal"
         NotificationCenter.default.addObserver(self, selector: #selector(SignInController.keyboardWillHide(notification:)), name: UIWindow.keyboardWillHideNotification, object: nil)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SignInController.tapped(tapGesture:)))
         view.addGestureRecognizer(tapGesture)
@@ -56,15 +60,26 @@ class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControl
          print("Inside add func")
          users.append(u)
      }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        guard let iden = segue.identifier else {return}
+        if(iden == "AdminSegue" ){
+            if let vd = segue.destination as? AddProductsVController  {
+               print("Inside admin segue")
+            }
+        }
+        else if(iden == "HomeSegue"){
+            if let vd1 = segue.destination as? HomeVController{
+                vd1.userid = LoginController.selecteduserid
+            }
+        }
     }
-    */
+    
 
     func textFieldDidEndEditing(_ textField: UITextField) {
         
@@ -81,8 +96,10 @@ class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControl
         }
     }
     
-    @IBAction func onLogin(_ sender: Any) {
-   
+    
+    
+@IBAction func onLogin(_ sender: Any) {
+
     if(username.isEmpty || password.isEmpty)
     {
         print("Inside empty loop")
@@ -90,25 +107,43 @@ class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControl
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default comment"), style: .default, handler: .none))
         self.present(alert, animated: true, completion: nil)
     }
-        
+
      else if(!username.isEmpty && !password.isEmpty){
+        print("I am here")
+        print("--\(users.count)")
             for u in users{
+                print(" $$ - \(u.password)")
                 if(u.emailaddress == username){
                     let pswd = u.password
+                    flag = 1
                     if(pswd == password){
-                        print("User logged in")
+                        if (username == "admin@gmail.com" && pswd == "admin"){
+                            
+                            self.performSegue(withIdentifier: "AdminSegue", sender: self)
+                        }
+                        else{
+                            print("uuuuu",u.userId)
+                            LoginController.selecteduserid = u.userId
+                             self.performSegue(withIdentifier: "HomeSegue", sender: self)
+                        }
                     }
                     else{
-                        
+
                         let alert = UIAlertController(title: "Alert", message: "Incorrect Username or password", preferredStyle: .alert)
                         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default comment"), style: .default, handler: .none))
                         self.present(alert, animated: true, completion: nil)
                           }
                 }
+               
             }
+        if(flag == 0){
+            let alert = UIAlertController(title: "Alert", message: "Username does not exist", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default comment"), style: .default, handler: .none))
+            self.present(alert, animated: true, completion: nil)
         }
-      
-      
-        
+        }
+
+
+
     }
 }
