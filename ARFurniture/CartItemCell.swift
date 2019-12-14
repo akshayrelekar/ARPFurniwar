@@ -10,6 +10,7 @@ import Foundation
 
 protocol CartItemDelegate {
     func updateCartItem(cell: CartItemCell, quantity: Int)
+  //  func updateTotal(cell: CartItemCell, quantity: Int)
 }
 
 class CartItemCell: UITableViewCell {

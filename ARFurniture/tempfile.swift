@@ -91,6 +91,8 @@ class tempfile: UIViewController {
                           p.productImage = productImage.image?.pngData()
                           cartitem.products = p
                           cartitem.subTotal = p.productCost
+                        cartitem.quantity = 1
+                        
                         cart.total += cartitem.subTotal
                          cart.item.insert(cartitem)
                          
@@ -107,6 +109,7 @@ class tempfile: UIViewController {
                 p.productImage = productImage.image?.pngData()
                 cartitem.products = p
                 cartitem.subTotal = p.productCost
+                 cartitem.quantity = 1
                 let cart = Cart(context: PersistentService.context)
                 cart.loggeduserid = LoginController.selecteduserid!
                 cart.item.insert(cartitem)

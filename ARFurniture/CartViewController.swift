@@ -29,7 +29,7 @@ class CartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.leftBarButtonItem = self.editButtonItem
         let fetchRequest:NSFetchRequest<Cart> = Cart.fetchRequest()
         do{
             let e = try PersistentService.context.fetch(fetchRequest)
@@ -72,6 +72,24 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource {
         return arrcartitems.count
     }
     
+    func updateTotal(cell: CartItemCell, quantity: Int){
+         
+              guard let indexPath = tableView.indexPath(for: cell) else { return }
+                     for c in usercart!.item {
+                         cartarr.append(c)
+                     }
+
+                 let cartItem = cartarr[indexPath.row]
+                     //Update cart item quantity
+                     cartItem.quantity = Int16(quantity)
+                     print("quannn",quantity)
+                       print("totsl",usercart!.total)
+              //Update displayed cart total
+             
+              let total = usercart!.total - ( cartItem.subTotal * Double(cartItem.quantity))
+              totalLabel.text = String(describing: total)
+      }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! CartItemCell
         cell.delegate = self as CartItemDelegate
@@ -79,6 +97,35 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource {
         cell.priceLabel.text = String(describing: (arrcartitems[indexPath.row]).products!.productCost)
         cell.productImage.image = UIImage(data: arrcartitems[indexPath.row].products!.productImage!) 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+       
+          let currentcell =  tableView.cellForRow(at: indexPath)
+            
+            print("----",Int(arrcartitems[indexPath.row].quantity))
+           
+            updateTotal(cell: currentcell as! CartItemCell, quantity: Int(arrcartitems[indexPath.row].quantity))
+            for userc in usercart!.item{
+                           if(userc.products?.productName == arrcartitems[indexPath.row].products?.productName ){
+                               usercart?.item.remove(userc)
+                           }
+                       }
+            PersistentService.persistentContainer.viewContext.delete(arrcartitems[indexPath.row])
+            PersistentService.saveContext()
+            
+            
+           // updateCartItem(cell: currentcell as! CartItemCell, quantity: Int(arrcartitems[indexPath.row].quantity))
+          
+            
+             arrcartitems.remove(at: indexPath.row)
+                        //            ImageArray.remove(at: indexPath.row)
+                                   
+                                    tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }
     }
 }
 
@@ -96,9 +143,12 @@ extension CartViewController: CartItemDelegate {
         cartItem.quantity = Int16(quantity)
         print("quan",quantity)
         //Update displayed cart total
+       
         let total = usercart!.total + ( cartarr[indexPath.row].subTotal * Double(cartItem.quantity)) - cartarr[indexPath.row].subTotal
         totalLabel.text = String(describing: total)
     }
+    
+  
     
 }
 

@@ -85,6 +85,7 @@ class HomeVController: UIViewController, iCarouselDelegate, iCarouselDataSource,
                                 vd.productphoto = producti!.image
                             }
                         }
+                    
     }
     
 
