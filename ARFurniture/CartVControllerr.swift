@@ -35,9 +35,13 @@ class CartVControllerr: UIViewController {
                         let billingAddress = tokenizedPayPalAccount.billingAddress
                         let shippingAddress = tokenizedPayPalAccount.shippingAddress
                     
+                    
+                    
                     let alert = UIAlertController(title: "✅", message: "Payment Successful", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default comment"), style: .default, handler: .none))
                      self.present(alert, animated: true, completion: nil)
+                    
+                    
                     
                    }else if let error = error{
                        print("Error while payment: ",error)

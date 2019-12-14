@@ -48,9 +48,10 @@ class tempfile: UIViewController {
         
         productImage.image = productphoto!
         productNameLabel.text = prodname
-        print("wallah",prodname)
+        print("wallah",productImgName)
         productdesc.text = proddesc
         productspec.text = prodspecs
+        print(prodprice)
         priceNumberLabel.text = String(format:"%\(0.2)f", prodprice!)
         
         productNameLabel.font = UIFont.boldSystemFont(ofSize: 35)
@@ -128,7 +129,9 @@ class tempfile: UIViewController {
             if( id == "CameraSegue"){
                 
                 if let vd = segue.destination as? ARVController {
+                    
                    vd.prodimgname = productImgName
+                       print("wallah22",vd.prodimgname)
     //                vd.passEvent(e: ProductArr[row ?? 0])
                 }
                 

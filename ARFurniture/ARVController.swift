@@ -34,6 +34,8 @@ class ARVController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         self.hud = MBProgressHUD.showAdded(to: self.ARSceneView, animated: true)
         self.hud.label.text = "Detecting Plane"
         registerGestureRecognizers()
+        
+         print("Image Name \(prodimgname!)")
     }
     
     func registerGestureRecognizers(){

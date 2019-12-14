@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class HomeVController: UIViewController, iCarouselDelegate, iCarouselDataSource,UINavigationControllerDelegate {
     
@@ -14,12 +15,14 @@ class HomeVController: UIViewController, iCarouselDelegate, iCarouselDataSource,
     @IBOutlet weak var carouselView: iCarousel!
     var producti : UIImageView?
     var images : [UIImage] = [
-        UIImage(named: "dog1.png")!,
-        UIImage(named: "dog2.png")!,
-        UIImage(named: "dog3.png")!,
-        UIImage(named: "dog4.png")!
+        UIImage(named: "c0.png")!,
+        UIImage(named: "s0.png")!,
+        UIImage(named: "t0.png")!,
+        UIImage(named: "b0.png")!
     ]
     
+    var allproducts:[Product] = [Product]()
+    var customizedarr:[Product] = [Product]()
     @IBOutlet weak var bedButton: UIButton!
     @IBOutlet weak var beanBagButton: UIButton!
     @IBOutlet weak var sofaButton: UIButton!
@@ -31,15 +34,17 @@ class HomeVController: UIViewController, iCarouselDelegate, iCarouselDataSource,
     @IBOutlet weak var sofaLabel: UILabel!
     @IBOutlet weak var chairLabel: UILabel!
     @IBOutlet weak var tableLabel: UILabel!
+    @IBOutlet weak var welcome: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        beanBagLabel.adjustsFontSizeToFitWidth = true
-//        bedLabel.adjustsFontSizeToFitWidth = true
-//        sofaLabel.adjustsFontSizeToFitWidth = true
-//        chairLabel.adjustsFontSizeToFitWidth = true
-//        tableLabel.adjustsFontSizeToFitWidth = true
+        beanBagLabel.adjustsFontSizeToFitWidth = true
+        bedLabel.adjustsFontSizeToFitWidth = true
+        sofaLabel.adjustsFontSizeToFitWidth = true
+        chairLabel.adjustsFontSizeToFitWidth = true
+        tableLabel.adjustsFontSizeToFitWidth = true
+        welcome.adjustsFontSizeToFitWidth = true
         
         carouselView.dataSource = self
         carouselView.reloadData()
@@ -79,6 +84,15 @@ class HomeVController: UIViewController, iCarouselDelegate, iCarouselDataSource,
         tableButton.layer.masksToBounds = false
         tableButton.layer.cornerRadius = 4.0
         
+        
+                                      let fetchRequest:NSFetchRequest<Product> = Product.fetchRequest()
+                                                      do{
+                                                          let e = try PersistentService.context.fetch(fetchRequest)
+                                                          allproducts = e
+                                                          
+                                                      }catch{
+                                                          print("cannot fetch the saved event")
+                                                      }
         // Do any additional setup after loading the view.
     }
     
@@ -126,8 +140,20 @@ class HomeVController: UIViewController, iCarouselDelegate, iCarouselDataSource,
         // Pass the selected object to the new view controller.
          guard let iden = segue.identifier else {return}
                         if(iden == "productDetails" ){
-                            if let vd = segue.destination as? ProductDetailsVController  {
-                                vd.productphoto = producti!.image
+                            if let vd = segue.destination as? tempfile
+                            {
+                              for prod in allproducts{
+                                if(prod.productImage == (producti!.image)?.pngData()){
+                                     vd.productphoto = producti!.image
+                                     vd.prodname = prod.productName
+                                    vd.prodprice = prod.productCost
+                                    vd.proddesc = prod.productDesc
+                                    vd.prodspecs = prod.productSpec
+                                    vd.productImgName = prod.productImageName
+                                    break
+                                }
+                                }
+                               
                             }
                         }
     }

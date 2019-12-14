@@ -37,6 +37,97 @@
 		6C6B44C523A4F8BB00AF235F /* c1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44BB23A4F8BB00AF235F /* c1.scn */; };
 		6C6B44C723A4F8BB00AF235F /* c4.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44BD23A4F8BB00AF235F /* c4.scn */; };
 		6C6B44C823A4F8BB00AF235F /* fabric_diff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44BE23A4F8BB00AF235F /* fabric_diff.jpg */; };
+		6C6B44CE23A506AD00AF235F /* b3texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44CD23A506AD00AF235F /* b3texture.jpg */; };
+		6C6B44D023A5079200AF235F /* b4.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44CF23A5079100AF235F /* b4.obj */; };
+		6C6B44D223A5079D00AF235F /* b4.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44D123A5079D00AF235F /* b4.scn */; };
+		6C6B44DB23A507C200AF235F /* fabric_48.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44D323A507C100AF235F /* fabric_48.jpg */; };
+		6C6B44DC23A507C200AF235F /* wenge_wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44D423A507C100AF235F /* wenge_wood.jpg */; };
+		6C6B44DD23A507C200AF235F /* fabric0006_diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44D523A507C200AF235F /* fabric0006_diffuse.jpg */; };
+		6C6B44DE23A507C200AF235F /* wenge_wood_b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44D623A507C200AF235F /* wenge_wood_b.jpg */; };
+		6C6B44DF23A507C200AF235F /* mpm_vol.07_p17_fabric_1_bump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44D723A507C200AF235F /* mpm_vol.07_p17_fabric_1_bump.jpg */; };
+		6C6B44E023A507C200AF235F /* fabric0001_blend.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44D823A507C200AF235F /* fabric0001_blend.jpg */; };
+		6C6B44E123A507C200AF235F /* Cloth_b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44D923A507C200AF235F /* Cloth_b.jpg */; };
+		6C6B44E223A507C200AF235F /* 500px-Circle_-_black_simple.svg[1].png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44DA23A507C200AF235F /* 500px-Circle_-_black_simple.svg[1].png */; };
+		6C6B44E423A508FF00AF235F /* b3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44E323A508FF00AF235F /* b3.obj */; };
+		6C6B44E623A5091700AF235F /* b3.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44E523A5091700AF235F /* b3.scn */; };
+		6C6B44EA23A5093100AF235F /* bed me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44E723A5093000AF235F /* bed me.jpg */; };
+		6C6B44EB23A5093100AF235F /* fiaba ash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44E823A5093000AF235F /* fiaba ash.jpg */; };
+		6C6B44EC23A5093100AF235F /* ZEROSPOTZ131.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44E923A5093100AF235F /* ZEROSPOTZ131.jpg */; };
+		6C6B44F823A50A7A00AF235F /* pillow _01.tx in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44EF23A50A7900AF235F /* pillow _01.tx */; };
+		6C6B44F923A50A7A00AF235F /* blanket_01 normal map.tx in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44F023A50A7900AF235F /* blanket_01 normal map.tx */; };
+		6C6B44FA23A50A7A00AF235F /* blank sheet_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44F123A50A7900AF235F /* blank sheet_02.jpg */; };
+		6C6B44FB23A50A7A00AF235F /* pillow _01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44F223A50A7A00AF235F /* pillow _01.jpg */; };
+		6C6B44FC23A50A7A00AF235F /* blank sheet_02.tx in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44F323A50A7A00AF235F /* blank sheet_02.tx */; };
+		6C6B44FD23A50A7A00AF235F /* wood_head board.tx in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44F423A50A7A00AF235F /* wood_head board.tx */; };
+		6C6B44FE23A50A7A00AF235F /* blank sheet__bump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44F523A50A7A00AF235F /* blank sheet__bump.jpg */; };
+		6C6B44FF23A50A7A00AF235F /* wood_head board.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44F623A50A7A00AF235F /* wood_head board.jpg */; };
+		6C6B450023A50A7A00AF235F /* blank sheet_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B44F723A50A7A00AF235F /* blank sheet_01.jpg */; };
+		6C6B450423A50B0700AF235F /* b0.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B450323A50B0700AF235F /* b0.obj */; };
+		6C6B450623A50B5400AF235F /* b0.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B450523A50B5400AF235F /* b0.scn */; };
+		6C6B450823A50BF400AF235F /* b1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B450723A50BF400AF235F /* b1.obj */; };
+		6C6B450A23A50BFF00AF235F /* b1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B450923A50BFF00AF235F /* b1.scn */; };
+		6C6B450C23A50D6900AF235F /* b2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B450B23A50D6900AF235F /* b2.scn */; };
+		6C6B451023A50E1200AF235F /* s0.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B450F23A50E1200AF235F /* s0.obj */; };
+		6C6B451223A50E2600AF235F /* s0.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B451123A50E2600AF235F /* s0.scn */; };
+		6C6B451D23A50ED700AF235F /* woodTextureNo6967_3648x2736.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B451323A50ED600AF235F /* woodTextureNo6967_3648x2736.jpg */; };
+		6C6B451E23A50ED700AF235F /* K5109-07b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B451423A50ED600AF235F /* K5109-07b.jpg */; };
+		6C6B451F23A50ED700AF235F /* K5108-09b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B451523A50ED600AF235F /* K5108-09b.jpg */; };
+		6C6B452023A50ED700AF235F /* K5109-09b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B451623A50ED600AF235F /* K5109-09b.jpg */; };
+		6C6B452123A50ED700AF235F /* K5109-09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B451723A50ED700AF235F /* K5109-09.jpg */; };
+		6C6B452223A50ED700AF235F /* K5110-10b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B451823A50ED700AF235F /* K5110-10b.jpg */; };
+		6C6B452323A50ED700AF235F /* K5108-09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B451923A50ED700AF235F /* K5108-09.jpg */; };
+		6C6B452423A50ED700AF235F /* K5109-07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B451A23A50ED700AF235F /* K5109-07.jpg */; };
+		6C6B452523A50ED700AF235F /* K5110-10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B451B23A50ED700AF235F /* K5110-10.jpg */; };
+		6C6B452623A50ED700AF235F /* woodTextureNo6967_3648x2736_b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B451C23A50ED700AF235F /* woodTextureNo6967_3648x2736_b.jpg */; };
+		6C6B452823A50F3F00AF235F /* s1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B452723A50F3F00AF235F /* s1.obj */; };
+		6C6B452A23A50F4900AF235F /* s1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B452923A50F4900AF235F /* s1.scn */; };
+		6C6B453023A50F6300AF235F /* Wood_Sofa GM Plutone_Dif.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B452B23A50F6300AF235F /* Wood_Sofa GM Plutone_Dif.jpg */; };
+		6C6B453123A50F6300AF235F /* Cloth_Sofa GM Plutone_Dif.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B452C23A50F6300AF235F /* Cloth_Sofa GM Plutone_Dif.jpg */; };
+		6C6B453223A50F6300AF235F /* Folds Pillows_Bump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B452D23A50F6300AF235F /* Folds Pillows_Bump.jpg */; };
+		6C6B453323A50F6300AF235F /* Wood_Sofa GM Plutone_Bump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B452E23A50F6300AF235F /* Wood_Sofa GM Plutone_Bump.jpg */; };
+		6C6B453423A50F6300AF235F /* Cloth_Sofa GM Plutone_Bump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B452F23A50F6300AF235F /* Cloth_Sofa GM Plutone_Bump.jpg */; };
+		6C6B453623A5103B00AF235F /* s2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B453523A5103B00AF235F /* s2.obj */; };
+		6C6B453A23A5105B00AF235F /* 14_5_28_d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B453723A5105A00AF235F /* 14_5_28_d.jpg */; };
+		6C6B453B23A5105B00AF235F /* wood_07_diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B453823A5105A00AF235F /* wood_07_diffuse.jpg */; };
+		6C6B453C23A5105B00AF235F /* 14_5_28_b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B453923A5105B00AF235F /* 14_5_28_b.jpg */; };
+		6C6B453E23A5106A00AF235F /* s2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B453D23A5106A00AF235F /* s2.scn */; };
+		6C6B454023A5116500AF235F /* s3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B453F23A5116500AF235F /* s3.obj */; };
+		6C6B454223A5117600AF235F /* s3.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B454123A5117600AF235F /* s3.scn */; };
+		6C6B454423A5120800AF235F /* t0.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B454323A5120800AF235F /* t0.obj */; };
+		6C6B454623A5121900AF235F /* t0.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B454523A5121900AF235F /* t0.scn */; };
+		6C6B454823A512BC00AF235F /* t1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B454723A512BB00AF235F /* t1.obj */; };
+		6C6B454A23A5130B00AF235F /* t1.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B454923A5130B00AF235F /* t1.scn */; };
+		6C6B454C23A5133D00AF235F /* t2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B454B23A5133D00AF235F /* t2.obj */; };
+		6C6B454E23A5134B00AF235F /* t2.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B454D23A5134B00AF235F /* t2.scn */; };
+		6C6B455023A513D100AF235F /* t3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B454F23A513D100AF235F /* t3.obj */; };
+		6C6B455223A513DE00AF235F /* t3.scn in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B455123A513DE00AF235F /* t3.scn */; };
+		6C6B455423A515C600AF235F /* s0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B455323A515C500AF235F /* s0.jpg */; };
+		6C6B455623A5161E00AF235F /* s1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B455523A5161E00AF235F /* s1.jpg */; };
+		6C6B455823A5165E00AF235F /* s2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B455723A5165D00AF235F /* s2.jpg */; };
+		6C6B455A23A5169400AF235F /* s3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B455923A5169400AF235F /* s3.jpg */; };
+		6C6B455C23A5173200AF235F /* t0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B455B23A5173100AF235F /* t0.jpg */; };
+		6C6B455E23A5177A00AF235F /* t1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B455D23A5177A00AF235F /* t1.jpg */; };
+		6C6B456023A5182900AF235F /* t2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B455F23A5182900AF235F /* t2.jpg */; };
+		6C6B456223A5188800AF235F /* t3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B456123A5188700AF235F /* t3.jpg */; };
+		6C6B456823A5198C00AF235F /* b2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B456723A5198C00AF235F /* b2.jpg */; };
+		6C6B456A23A51A7D00AF235F /* b3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B456923A51A7C00AF235F /* b3.jpg */; };
+		6C6B456C23A51AAD00AF235F /* b4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B456B23A51AAD00AF235F /* b4.jpg */; };
+		6C6B457223A51F0800AF235F /* b0.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B456D23A51F0700AF235F /* b0.png */; };
+		6C6B457423A51F0800AF235F /* b1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B456F23A51F0800AF235F /* b1.png */; };
+		6C6B457623A51F0800AF235F /* b3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B457123A51F0800AF235F /* b3.png */; };
+		6C6B457823A5259100AF235F /* s2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B457723A5259100AF235F /* s2.png */; };
+		6C6B457D23A525BC00AF235F /* s4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B457923A525BB00AF235F /* s4.png */; };
+		6C6B457E23A525BC00AF235F /* s3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B457A23A525BC00AF235F /* s3.png */; };
+		6C6B457F23A525BC00AF235F /* s1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B457B23A525BC00AF235F /* s1.png */; };
+		6C6B458023A525BC00AF235F /* s0.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B457C23A525BC00AF235F /* s0.png */; };
+		6C6B458523A5260900AF235F /* b5.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B458123A5260800AF235F /* b5.png */; };
+		6C6B458623A5260900AF235F /* b2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B458223A5260800AF235F /* b2.png */; };
+		6C6B458723A5260900AF235F /* b4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B458323A5260800AF235F /* b4.png */; };
+		6C6B458823A5260900AF235F /* b6.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B458423A5260800AF235F /* b6.png */; };
+		6C6B459823A5285900AF235F /* t2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B459423A5285800AF235F /* t2.png */; };
+		6C6B459923A5285900AF235F /* t0.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B459523A5285800AF235F /* t0.png */; };
+		6C6B459A23A5285900AF235F /* t1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B459623A5285900AF235F /* t1.png */; };
+		6C6B459C23A5288C00AF235F /* t3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6B459B23A5288B00AF235F /* t3.png */; };
 		6C6BA9902392F4160001194C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BA98F2392F4160001194C /* AppDelegate.swift */; };
 		6C6BA9922392F4160001194C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BA9912392F4160001194C /* SceneDelegate.swift */; };
 		6C6BA9942392F4160001194C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BA9932392F4160001194C /* ViewController.swift */; };
@@ -102,6 +193,99 @@
 		6C6B44BC23A4F8BB00AF235F /* fabric_bump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fabric_bump.jpg; sourceTree = "<group>"; };
 		6C6B44BD23A4F8BB00AF235F /* c4.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = c4.scn; sourceTree = "<group>"; };
 		6C6B44BE23A4F8BB00AF235F /* fabric_diff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fabric_diff.jpg; sourceTree = "<group>"; };
+		6C6B44CD23A506AD00AF235F /* b3texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = b3texture.jpg; path = ../../Models/3D/b3/textures/b3texture.jpg; sourceTree = "<group>"; };
+		6C6B44CF23A5079100AF235F /* b4.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = b4.obj; path = ../../Models/3D/b4/b4/b4.obj; sourceTree = "<group>"; };
+		6C6B44D123A5079D00AF235F /* b4.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = b4.scn; path = ../../Models/3D/b4/b4/b4.scn; sourceTree = "<group>"; };
+		6C6B44D323A507C100AF235F /* fabric_48.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fabric_48.jpg; path = ../../Models/3D/b4/textures/fabric_48.jpg; sourceTree = "<group>"; };
+		6C6B44D423A507C100AF235F /* wenge_wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wenge_wood.jpg; path = ../../Models/3D/b4/textures/wenge_wood.jpg; sourceTree = "<group>"; };
+		6C6B44D523A507C200AF235F /* fabric0006_diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fabric0006_diffuse.jpg; path = ../../Models/3D/b4/textures/fabric0006_diffuse.jpg; sourceTree = "<group>"; };
+		6C6B44D623A507C200AF235F /* wenge_wood_b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wenge_wood_b.jpg; path = ../../Models/3D/b4/textures/wenge_wood_b.jpg; sourceTree = "<group>"; };
+		6C6B44D723A507C200AF235F /* mpm_vol.07_p17_fabric_1_bump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mpm_vol.07_p17_fabric_1_bump.jpg; path = ../../Models/3D/b4/textures/mpm_vol.07_p17_fabric_1_bump.jpg; sourceTree = "<group>"; };
+		6C6B44D823A507C200AF235F /* fabric0001_blend.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fabric0001_blend.jpg; path = ../../Models/3D/b4/textures/fabric0001_blend.jpg; sourceTree = "<group>"; };
+		6C6B44D923A507C200AF235F /* Cloth_b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Cloth_b.jpg; path = ../../Models/3D/b4/textures/Cloth_b.jpg; sourceTree = "<group>"; };
+		6C6B44DA23A507C200AF235F /* 500px-Circle_-_black_simple.svg[1].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "500px-Circle_-_black_simple.svg[1].png"; path = "../../Models/3D/b4/textures/500px-Circle_-_black_simple.svg[1].png"; sourceTree = "<group>"; };
+		6C6B44E323A508FF00AF235F /* b3.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = b3.obj; path = ../../Models/3D/b5/b5/b3.obj; sourceTree = "<group>"; };
+		6C6B44E523A5091700AF235F /* b3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = b3.scn; path = ../../Models/3D/b5/b5/b3.scn; sourceTree = "<group>"; };
+		6C6B44E723A5093000AF235F /* bed me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "bed me.jpg"; path = "../../Models/3D/b5/texture/bed me.jpg"; sourceTree = "<group>"; };
+		6C6B44E823A5093000AF235F /* fiaba ash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "fiaba ash.jpg"; path = "../../Models/3D/b5/texture/fiaba ash.jpg"; sourceTree = "<group>"; };
+		6C6B44E923A5093100AF235F /* ZEROSPOTZ131.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ZEROSPOTZ131.jpg; path = ../../Models/3D/b5/texture/ZEROSPOTZ131.jpg; sourceTree = "<group>"; };
+		6C6B44EF23A50A7900AF235F /* pillow _01.tx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "pillow _01.tx"; path = "../../Models/3D/b6/Bed_obj/textures/pillow _01.tx"; sourceTree = "<group>"; };
+		6C6B44F023A50A7900AF235F /* blanket_01 normal map.tx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "blanket_01 normal map.tx"; path = "../../Models/3D/b6/Bed_obj/textures/blanket_01 normal map.tx"; sourceTree = "<group>"; };
+		6C6B44F123A50A7900AF235F /* blank sheet_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "blank sheet_02.jpg"; path = "../../Models/3D/b6/Bed_obj/textures/blank sheet_02.jpg"; sourceTree = "<group>"; };
+		6C6B44F223A50A7A00AF235F /* pillow _01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "pillow _01.jpg"; path = "../../Models/3D/b6/Bed_obj/textures/pillow _01.jpg"; sourceTree = "<group>"; };
+		6C6B44F323A50A7A00AF235F /* blank sheet_02.tx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "blank sheet_02.tx"; path = "../../Models/3D/b6/Bed_obj/textures/blank sheet_02.tx"; sourceTree = "<group>"; };
+		6C6B44F423A50A7A00AF235F /* wood_head board.tx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "wood_head board.tx"; path = "../../Models/3D/b6/Bed_obj/textures/wood_head board.tx"; sourceTree = "<group>"; };
+		6C6B44F523A50A7A00AF235F /* blank sheet__bump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "blank sheet__bump.jpg"; path = "../../Models/3D/b6/Bed_obj/textures/blank sheet__bump.jpg"; sourceTree = "<group>"; };
+		6C6B44F623A50A7A00AF235F /* wood_head board.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "wood_head board.jpg"; path = "../../Models/3D/b6/Bed_obj/textures/wood_head board.jpg"; sourceTree = "<group>"; };
+		6C6B44F723A50A7A00AF235F /* blank sheet_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "blank sheet_01.jpg"; path = "../../Models/3D/b6/Bed_obj/textures/blank sheet_01.jpg"; sourceTree = "<group>"; };
+		6C6B450323A50B0700AF235F /* b0.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = b0.obj; path = ../../Models/3D/b6/Bed_obj/b0.obj; sourceTree = "<group>"; };
+		6C6B450523A50B5400AF235F /* b0.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = b0.scn; sourceTree = "<group>"; };
+		6C6B450723A50BF400AF235F /* b1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = b1.obj; path = ../../Models/3D/b2/b2/b1.obj; sourceTree = "<group>"; };
+		6C6B450923A50BFF00AF235F /* b1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = b1.scn; path = ../../Models/3D/b2/b2/b1.scn; sourceTree = "<group>"; };
+		6C6B450B23A50D6900AF235F /* b2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = b2.scn; path = ../../Models/3D/b2.scn; sourceTree = "<group>"; };
+		6C6B450F23A50E1200AF235F /* s0.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = s0.obj; path = ../../Models/3D/s1/Obj/s0.obj; sourceTree = "<group>"; };
+		6C6B451123A50E2600AF235F /* s0.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = s0.scn; path = ../../Models/3D/s1/Obj/s0.scn; sourceTree = "<group>"; };
+		6C6B451323A50ED600AF235F /* woodTextureNo6967_3648x2736.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = woodTextureNo6967_3648x2736.jpg; path = ../../Models/3D/s1/Obj/Texture/woodTextureNo6967_3648x2736.jpg; sourceTree = "<group>"; };
+		6C6B451423A50ED600AF235F /* K5109-07b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "K5109-07b.jpg"; path = "../../Models/3D/s1/Obj/Texture/K5109-07b.jpg"; sourceTree = "<group>"; };
+		6C6B451523A50ED600AF235F /* K5108-09b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "K5108-09b.jpg"; path = "../../Models/3D/s1/Obj/Texture/K5108-09b.jpg"; sourceTree = "<group>"; };
+		6C6B451623A50ED600AF235F /* K5109-09b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "K5109-09b.jpg"; path = "../../Models/3D/s1/Obj/Texture/K5109-09b.jpg"; sourceTree = "<group>"; };
+		6C6B451723A50ED700AF235F /* K5109-09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "K5109-09.jpg"; path = "../../Models/3D/s1/Obj/Texture/K5109-09.jpg"; sourceTree = "<group>"; };
+		6C6B451823A50ED700AF235F /* K5110-10b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "K5110-10b.jpg"; path = "../../Models/3D/s1/Obj/Texture/K5110-10b.jpg"; sourceTree = "<group>"; };
+		6C6B451923A50ED700AF235F /* K5108-09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "K5108-09.jpg"; path = "../../Models/3D/s1/Obj/Texture/K5108-09.jpg"; sourceTree = "<group>"; };
+		6C6B451A23A50ED700AF235F /* K5109-07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "K5109-07.jpg"; path = "../../Models/3D/s1/Obj/Texture/K5109-07.jpg"; sourceTree = "<group>"; };
+		6C6B451B23A50ED700AF235F /* K5110-10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "K5110-10.jpg"; path = "../../Models/3D/s1/Obj/Texture/K5110-10.jpg"; sourceTree = "<group>"; };
+		6C6B451C23A50ED700AF235F /* woodTextureNo6967_3648x2736_b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = woodTextureNo6967_3648x2736_b.jpg; path = ../../Models/3D/s1/Obj/Texture/woodTextureNo6967_3648x2736_b.jpg; sourceTree = "<group>"; };
+		6C6B452723A50F3F00AF235F /* s1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = s1.obj; path = ../../Models/3D/s2/sofa2/s1.obj; sourceTree = "<group>"; };
+		6C6B452923A50F4900AF235F /* s1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = s1.scn; path = ../../Models/3D/s2/sofa2/s1.scn; sourceTree = "<group>"; };
+		6C6B452B23A50F6300AF235F /* Wood_Sofa GM Plutone_Dif.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Wood_Sofa GM Plutone_Dif.jpg"; path = "../../Models/3D/s2/sofa2/Wood_Sofa GM Plutone_Dif.jpg"; sourceTree = "<group>"; };
+		6C6B452C23A50F6300AF235F /* Cloth_Sofa GM Plutone_Dif.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Cloth_Sofa GM Plutone_Dif.jpg"; path = "../../Models/3D/s2/sofa2/Cloth_Sofa GM Plutone_Dif.jpg"; sourceTree = "<group>"; };
+		6C6B452D23A50F6300AF235F /* Folds Pillows_Bump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Folds Pillows_Bump.jpg"; path = "../../Models/3D/s2/sofa2/Folds Pillows_Bump.jpg"; sourceTree = "<group>"; };
+		6C6B452E23A50F6300AF235F /* Wood_Sofa GM Plutone_Bump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Wood_Sofa GM Plutone_Bump.jpg"; path = "../../Models/3D/s2/sofa2/Wood_Sofa GM Plutone_Bump.jpg"; sourceTree = "<group>"; };
+		6C6B452F23A50F6300AF235F /* Cloth_Sofa GM Plutone_Bump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Cloth_Sofa GM Plutone_Bump.jpg"; path = "../../Models/3D/s2/sofa2/Cloth_Sofa GM Plutone_Bump.jpg"; sourceTree = "<group>"; };
+		6C6B453523A5103B00AF235F /* s2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = s2.obj; path = ../../Models/3D/s3/s2.obj; sourceTree = "<group>"; };
+		6C6B453723A5105A00AF235F /* 14_5_28_d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 14_5_28_d.jpg; path = "../../Models/3D/s3/Texture/Turbosquid/Sofa seria/Texture/14_5_28_d.jpg"; sourceTree = "<group>"; };
+		6C6B453823A5105A00AF235F /* wood_07_diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wood_07_diffuse.jpg; path = "../../Models/3D/s3/Texture/Turbosquid/Sofa seria/Texture/wood_07_diffuse.jpg"; sourceTree = "<group>"; };
+		6C6B453923A5105B00AF235F /* 14_5_28_b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 14_5_28_b.jpg; path = "../../Models/3D/s3/Texture/Turbosquid/Sofa seria/Texture/14_5_28_b.jpg"; sourceTree = "<group>"; };
+		6C6B453D23A5106A00AF235F /* s2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = s2.scn; path = ../../Models/3D/s3/s2.scn; sourceTree = "<group>"; };
+		6C6B453F23A5116500AF235F /* s3.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = s3.obj; path = ../../Models/3D/s4/s3.obj; sourceTree = "<group>"; };
+		6C6B454123A5117600AF235F /* s3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = s3.scn; path = ../../Models/3D/s4/s3.scn; sourceTree = "<group>"; };
+		6C6B454323A5120800AF235F /* t0.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t0.obj; path = ../../Models/3D/t1/t0.obj; sourceTree = "<group>"; };
+		6C6B454523A5121900AF235F /* t0.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = t0.scn; path = ../../Models/3D/t1/t0.scn; sourceTree = "<group>"; };
+		6C6B454723A512BB00AF235F /* t1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t1.obj; path = ../../Models/3D/t3/t3/t1.obj; sourceTree = "<group>"; };
+		6C6B454923A5130B00AF235F /* t1.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = t1.scn; path = ../../Models/3D/t3/t3/t1.scn; sourceTree = "<group>"; };
+		6C6B454B23A5133D00AF235F /* t2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t2.obj; path = ../../Models/3D/t4/t4/t2.obj; sourceTree = "<group>"; };
+		6C6B454D23A5134B00AF235F /* t2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = t2.scn; path = ../../Models/3D/t4/t4/t2.scn; sourceTree = "<group>"; };
+		6C6B454F23A513D100AF235F /* t3.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = t3.obj; path = ../../Models/3D/t5/t5/t3.obj; sourceTree = "<group>"; };
+		6C6B455123A513DE00AF235F /* t3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = t3.scn; path = ../../Models/3D/t5/t5/t3.scn; sourceTree = "<group>"; };
+		6C6B455323A515C500AF235F /* s0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = s0.jpg; path = ../../../Models/2D/s0.jpg; sourceTree = "<group>"; };
+		6C6B455523A5161E00AF235F /* s1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = s1.jpg; path = ../../../Models/2D/s1.jpg; sourceTree = "<group>"; };
+		6C6B455723A5165D00AF235F /* s2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = s2.jpg; path = ../../../Models/2D/s2.jpg; sourceTree = "<group>"; };
+		6C6B455923A5169400AF235F /* s3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = s3.jpg; path = ../../../Models/2D/s3.jpg; sourceTree = "<group>"; };
+		6C6B455B23A5173100AF235F /* t0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = t0.jpg; path = ../../../Models/2D/t0.jpg; sourceTree = "<group>"; };
+		6C6B455D23A5177A00AF235F /* t1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = t1.jpg; path = ../../../Models/2D/t1.jpg; sourceTree = "<group>"; };
+		6C6B455F23A5182900AF235F /* t2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = t2.jpg; path = ../../../Models/2D/t2.jpg; sourceTree = "<group>"; };
+		6C6B456123A5188700AF235F /* t3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = t3.jpg; path = ../../../Models/2D/t3.jpg; sourceTree = "<group>"; };
+		6C6B456723A5198C00AF235F /* b2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = b2.jpg; path = ../../../Models/2D/b2.jpg; sourceTree = "<group>"; };
+		6C6B456923A51A7C00AF235F /* b3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = b3.jpg; path = ../../../Models/2D/b3.jpg; sourceTree = "<group>"; };
+		6C6B456B23A51AAD00AF235F /* b4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = b4.jpg; path = ../../../Models/2D/b4.jpg; sourceTree = "<group>"; };
+		6C6B456D23A51F0700AF235F /* b0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b0.png; path = ../../../Models/2D/b0.png; sourceTree = "<group>"; };
+		6C6B456E23A51F0700AF235F /* b2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b2.png; path = ../../../Models/2D/b2.png; sourceTree = "<group>"; };
+		6C6B456F23A51F0800AF235F /* b1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b1.png; path = ../../../Models/2D/b1.png; sourceTree = "<group>"; };
+		6C6B457023A51F0800AF235F /* b4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b4.png; path = ../../../Models/2D/b4.png; sourceTree = "<group>"; };
+		6C6B457123A51F0800AF235F /* b3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b3.png; path = ../../../Models/2D/b3.png; sourceTree = "<group>"; };
+		6C6B457723A5259100AF235F /* s2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s2.png; path = ../../Models/2D/s2.png; sourceTree = "<group>"; };
+		6C6B457923A525BB00AF235F /* s4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s4.png; path = ../../Models/2D/s4.png; sourceTree = "<group>"; };
+		6C6B457A23A525BC00AF235F /* s3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s3.png; path = ../../Models/2D/s3.png; sourceTree = "<group>"; };
+		6C6B457B23A525BC00AF235F /* s1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s1.png; path = ../../Models/2D/s1.png; sourceTree = "<group>"; };
+		6C6B457C23A525BC00AF235F /* s0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = s0.png; path = ../../Models/2D/s0.png; sourceTree = "<group>"; };
+		6C6B458123A5260800AF235F /* b5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b5.png; path = ../../Models/2D/b5.png; sourceTree = "<group>"; };
+		6C6B458223A5260800AF235F /* b2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b2.png; path = ../../Models/2D/b2.png; sourceTree = "<group>"; };
+		6C6B458323A5260800AF235F /* b4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b4.png; path = ../../Models/2D/b4.png; sourceTree = "<group>"; };
+		6C6B458423A5260800AF235F /* b6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b6.png; path = ../../Models/2D/b6.png; sourceTree = "<group>"; };
+		6C6B459423A5285800AF235F /* t2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = t2.png; path = ../../../Models/2D/t2.png; sourceTree = "<group>"; };
+		6C6B459523A5285800AF235F /* t0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = t0.png; path = ../../../Models/2D/t0.png; sourceTree = "<group>"; };
+		6C6B459623A5285900AF235F /* t1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = t1.png; path = ../../../Models/2D/t1.png; sourceTree = "<group>"; };
+		6C6B459B23A5288B00AF235F /* t3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = t3.png; path = ../../../Models/2D/t3.png; sourceTree = "<group>"; };
 		6C6BA98C2392F4160001194C /* ARFurniture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARFurniture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C6BA98F2392F4160001194C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C6BA9912392F4160001194C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +364,87 @@
 		6C6BA98E2392F4160001194C /* ARFurniture */ = {
 			isa = PBXGroup;
 			children = (
+				6C6B457723A5259100AF235F /* s2.png */,
+				6C6B457C23A525BC00AF235F /* s0.png */,
+				6C6B457B23A525BC00AF235F /* s1.png */,
+				6C6B457A23A525BC00AF235F /* s3.png */,
+				6C6B457923A525BB00AF235F /* s4.png */,
+				6C6B456D23A51F0700AF235F /* b0.png */,
+				6C6B456F23A51F0800AF235F /* b1.png */,
+				6C6B456E23A51F0700AF235F /* b2.png */,
+				6C6B457123A51F0800AF235F /* b3.png */,
+				6C6B457023A51F0800AF235F /* b4.png */,
+				6C6B450323A50B0700AF235F /* b0.obj */,
+				6C6B450523A50B5400AF235F /* b0.scn */,
+				6C6B450723A50BF400AF235F /* b1.obj */,
+				6C6B450923A50BFF00AF235F /* b1.scn */,
+				6C6B456723A5198C00AF235F /* b2.jpg */,
+				6C6B450B23A50D6900AF235F /* b2.scn */,
+				6C6B456923A51A7C00AF235F /* b3.jpg */,
+				6C6B44E323A508FF00AF235F /* b3.obj */,
+				6C6B44E523A5091700AF235F /* b3.scn */,
+				6C6B458223A5260800AF235F /* b2.png */,
+				6C6B458323A5260800AF235F /* b4.png */,
+				6C6B458123A5260800AF235F /* b5.png */,
+				6C6B458423A5260800AF235F /* b6.png */,
+				6C6B44E723A5093000AF235F /* bed me.jpg */,
+				6C6B44E823A5093000AF235F /* fiaba ash.jpg */,
+				6C6B44E923A5093100AF235F /* ZEROSPOTZ131.jpg */,
+				6C6B44CD23A506AD00AF235F /* b3texture.jpg */,
+				6C6B459523A5285800AF235F /* t0.png */,
+				6C6B459623A5285900AF235F /* t1.png */,
+				6C6B459423A5285800AF235F /* t2.png */,
+				6C6B456B23A51AAD00AF235F /* b4.jpg */,
+				6C6B459B23A5288B00AF235F /* t3.png */,
+				6C6B44CF23A5079100AF235F /* b4.obj */,
+				6C6B44D123A5079D00AF235F /* b4.scn */,
+				6C6B44F523A50A7A00AF235F /* blank sheet__bump.jpg */,
+				6C6B44F723A50A7A00AF235F /* blank sheet_01.jpg */,
+				6C6B44F123A50A7900AF235F /* blank sheet_02.jpg */,
+				6C6B44F323A50A7A00AF235F /* blank sheet_02.tx */,
+				6C6B44F023A50A7900AF235F /* blanket_01 normal map.tx */,
+				6C6B44F223A50A7A00AF235F /* pillow _01.jpg */,
+				6C6B44EF23A50A7900AF235F /* pillow _01.tx */,
+				6C6B44F623A50A7A00AF235F /* wood_head board.jpg */,
+				6C6B44F423A50A7A00AF235F /* wood_head board.tx */,
+				6C6B44DA23A507C200AF235F /* 500px-Circle_-_black_simple.svg[1].png */,
+				6C6B44D923A507C200AF235F /* Cloth_b.jpg */,
+				6C6B44D323A507C100AF235F /* fabric_48.jpg */,
+				6C6B44D823A507C200AF235F /* fabric0001_blend.jpg */,
+				6C6B44D523A507C200AF235F /* fabric0006_diffuse.jpg */,
+				6C6B44D723A507C200AF235F /* mpm_vol.07_p17_fabric_1_bump.jpg */,
+				6C6B44D623A507C200AF235F /* wenge_wood_b.jpg */,
+				6C6B44D423A507C100AF235F /* wenge_wood.jpg */,
+				6C6B450F23A50E1200AF235F /* s0.obj */,
+				6C6B451923A50ED700AF235F /* K5108-09.jpg */,
+				6C6B451523A50ED600AF235F /* K5108-09b.jpg */,
+				6C6B451A23A50ED700AF235F /* K5109-07.jpg */,
+				6C6B451423A50ED600AF235F /* K5109-07b.jpg */,
+				6C6B451723A50ED700AF235F /* K5109-09.jpg */,
+				6C6B451623A50ED600AF235F /* K5109-09b.jpg */,
+				6C6B451B23A50ED700AF235F /* K5110-10.jpg */,
+				6C6B451823A50ED700AF235F /* K5110-10b.jpg */,
+				6C6B451C23A50ED700AF235F /* woodTextureNo6967_3648x2736_b.jpg */,
+				6C6B451323A50ED600AF235F /* woodTextureNo6967_3648x2736.jpg */,
+				6C6B455323A515C500AF235F /* s0.jpg */,
+				6C6B451123A50E2600AF235F /* s0.scn */,
+				6C6B452723A50F3F00AF235F /* s1.obj */,
+				6C6B452F23A50F6300AF235F /* Cloth_Sofa GM Plutone_Bump.jpg */,
+				6C6B452C23A50F6300AF235F /* Cloth_Sofa GM Plutone_Dif.jpg */,
+				6C6B452D23A50F6300AF235F /* Folds Pillows_Bump.jpg */,
+				6C6B452E23A50F6300AF235F /* Wood_Sofa GM Plutone_Bump.jpg */,
+				6C6B452B23A50F6300AF235F /* Wood_Sofa GM Plutone_Dif.jpg */,
+				6C6B455523A5161E00AF235F /* s1.jpg */,
+				6C6B452923A50F4900AF235F /* s1.scn */,
+				6C6B453923A5105B00AF235F /* 14_5_28_b.jpg */,
+				6C6B453723A5105A00AF235F /* 14_5_28_d.jpg */,
+				6C6B453823A5105A00AF235F /* wood_07_diffuse.jpg */,
+				6C6B455723A5165D00AF235F /* s2.jpg */,
+				6C6B453523A5103B00AF235F /* s2.obj */,
+				6C6B453D23A5106A00AF235F /* s2.scn */,
+				6C6B455923A5169400AF235F /* s3.jpg */,
+				6C6B453F23A5116500AF235F /* s3.obj */,
+				6C6B454123A5117600AF235F /* s3.scn */,
 				6C6B44BA23A4F8BB00AF235F /* c0.png */,
 				6C6B44B623A4F8BB00AF235F /* c0.scn */,
 				6C6B44B823A4F8BB00AF235F /* c1.png */,
@@ -188,11 +453,23 @@
 				6C6B44B723A4F8BB00AF235F /* c3.png */,
 				6C6B44B523A4F8BB00AF235F /* c3.scn */,
 				6C6B44BD23A4F8BB00AF235F /* c4.scn */,
+				6C6B455B23A5173100AF235F /* t0.jpg */,
+				6C6B454323A5120800AF235F /* t0.obj */,
+				6C6B454523A5121900AF235F /* t0.scn */,
 				6C6B44BC23A4F8BB00AF235F /* fabric_bump.jpg */,
 				6C6B44BE23A4F8BB00AF235F /* fabric_diff.jpg */,
 				6C6B44AE23A4F66100AF235F /* Cart+CoreDataClass.swift */,
 				6C6B44AF23A4F66100AF235F /* Cart+CoreDataProperties.swift */,
 				6C6B44AD23A4F66100AF235F /* CartItem+CoreDataClass.swift */,
+				6C6B455D23A5177A00AF235F /* t1.jpg */,
+				6C6B454723A512BB00AF235F /* t1.obj */,
+				6C6B454923A5130B00AF235F /* t1.scn */,
+				6C6B455F23A5182900AF235F /* t2.jpg */,
+				6C6B454B23A5133D00AF235F /* t2.obj */,
+				6C6B454D23A5134B00AF235F /* t2.scn */,
+				6C6B456123A5188700AF235F /* t3.jpg */,
+				6C6B454F23A513D100AF235F /* t3.obj */,
+				6C6B455123A513DE00AF235F /* t3.scn */,
 				6C6B44AC23A4F66100AF235F /* CartItem+CoreDataProperties.swift */,
 				6C6B44A823A4F4B300AF235F /* tempfile.swift */,
 				6C6B44A623A4F48D00AF235F /* SignInController.swift */,
@@ -316,29 +593,120 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C6B44DE23A507C200AF235F /* wenge_wood_b.jpg in Resources */,
 				6C6BA99F2392F4170001194C /* LaunchScreen.storyboard in Resources */,
+				6C6B44EA23A5093100AF235F /* bed me.jpg in Resources */,
+				6C6B451F23A50ED700AF235F /* K5108-09b.jpg in Resources */,
+				6C6B452A23A50F4900AF235F /* s1.scn in Resources */,
+				6C6B453C23A5105B00AF235F /* 14_5_28_b.jpg in Resources */,
+				6C6B451223A50E2600AF235F /* s0.scn in Resources */,
+				6C6B455423A515C600AF235F /* s0.jpg in Resources */,
+				6C6B451E23A50ED700AF235F /* K5109-07b.jpg in Resources */,
+				6C6B457223A51F0800AF235F /* b0.png in Resources */,
 				6C6B44C823A4F8BB00AF235F /* fabric_diff.jpg in Resources */,
 				6C7B1C1723989DB3008536AE /* fabric_bump.jpg in Resources */,
 				6C6B44C523A4F8BB00AF235F /* c1.scn in Resources */,
+				6C6B44FB23A50A7A00AF235F /* pillow _01.jpg in Resources */,
+				6C6B455823A5165E00AF235F /* s2.jpg in Resources */,
+				6C6B44FE23A50A7A00AF235F /* blank sheet__bump.jpg in Resources */,
+				6C6B44FD23A50A7A00AF235F /* wood_head board.tx in Resources */,
+				6C6B455623A5161E00AF235F /* s1.jpg in Resources */,
+				6C6B44EB23A5093100AF235F /* fiaba ash.jpg in Resources */,
+				6C6B455223A513DE00AF235F /* t3.scn in Resources */,
+				6C6B450C23A50D6900AF235F /* b2.scn in Resources */,
+				6C6B452623A50ED700AF235F /* woodTextureNo6967_3648x2736_b.jpg in Resources */,
+				6C6B44E023A507C200AF235F /* fabric0001_blend.jpg in Resources */,
+				6C6B44FF23A50A7A00AF235F /* wood_head board.jpg in Resources */,
+				6C6B450023A50A7A00AF235F /* blank sheet_01.jpg in Resources */,
+				6C6B458623A5260900AF235F /* b2.png in Resources */,
+				6C6B457F23A525BC00AF235F /* s1.png in Resources */,
+				6C6B453323A50F6300AF235F /* Wood_Sofa GM Plutone_Bump.jpg in Resources */,
 				6C5C42B12395E5EB00EBEB35 /* dog4.png in Resources */,
+				6C6B44F923A50A7A00AF235F /* blanket_01 normal map.tx in Resources */,
+				6C6B44FC23A50A7A00AF235F /* blank sheet_02.tx in Resources */,
+				6C6B458723A5260900AF235F /* b4.png in Resources */,
+				6C6B458023A525BC00AF235F /* s0.png in Resources */,
+				6C6B44E223A507C200AF235F /* 500px-Circle_-_black_simple.svg[1].png in Resources */,
+				6C6B455023A513D100AF235F /* t3.obj in Resources */,
+				6C6B459A23A5285900AF235F /* t1.png in Resources */,
+				6C6B44FA23A50A7A00AF235F /* blank sheet_02.jpg in Resources */,
+				6C6B452123A50ED700AF235F /* K5109-09.jpg in Resources */,
+				6C6B450623A50B5400AF235F /* b0.scn in Resources */,
+				6C6B452323A50ED700AF235F /* K5108-09.jpg in Resources */,
+				6C6B455E23A5177A00AF235F /* t1.jpg in Resources */,
+				6C6B456823A5198C00AF235F /* b2.jpg in Resources */,
+				6C6B451023A50E1200AF235F /* s0.obj in Resources */,
+				6C6B454623A5121900AF235F /* t0.scn in Resources */,
+				6C6B454223A5117600AF235F /* s3.scn in Resources */,
 				6CCF26D8239DC06900BB5CAE /* bed1.scn in Resources */,
+				6C6B44D223A5079D00AF235F /* b4.scn in Resources */,
+				6C6B451D23A50ED700AF235F /* woodTextureNo6967_3648x2736.jpg in Resources */,
+				6C6B454023A5116500AF235F /* s3.obj in Resources */,
 				6C6BA99C2392F4170001194C /* Assets.xcassets in Resources */,
 				6C6B44C223A4F8BB00AF235F /* c1.png in Resources */,
+				6C6B455A23A5169400AF235F /* s3.jpg in Resources */,
+				6C6B456023A5182900AF235F /* t2.jpg in Resources */,
+				6C6B454423A5120800AF235F /* t0.obj in Resources */,
+				6C6B44DF23A507C200AF235F /* mpm_vol.07_p17_fabric_1_bump.jpg in Resources */,
+				6C6B453A23A5105B00AF235F /* 14_5_28_d.jpg in Resources */,
+				6C6B457423A51F0800AF235F /* b1.png in Resources */,
+				6C6B454A23A5130B00AF235F /* t1.scn in Resources */,
+				6C6B454823A512BC00AF235F /* t1.obj in Resources */,
 				6C5C42B02395E5EB00EBEB35 /* dog1.png in Resources */,
+				6C6B453223A50F6300AF235F /* Folds Pillows_Bump.jpg in Resources */,
+				6C6B454C23A5133D00AF235F /* t2.obj in Resources */,
+				6C6B453E23A5106A00AF235F /* s2.scn in Resources */,
+				6C6B458523A5260900AF235F /* b5.png in Resources */,
+				6C6B457D23A525BC00AF235F /* s4.png in Resources */,
+				6C6B455C23A5173200AF235F /* t0.jpg in Resources */,
+				6C6B452223A50ED700AF235F /* K5110-10b.jpg in Resources */,
+				6C6B454E23A5134B00AF235F /* t2.scn in Resources */,
+				6C6B456C23A51AAD00AF235F /* b4.jpg in Resources */,
 				6C6BA9972392F4160001194C /* Main.storyboard in Resources */,
+				6C6B450823A50BF400AF235F /* b1.obj in Resources */,
 				6C6B44C423A4F8BB00AF235F /* c0.png in Resources */,
+				6C6B44E423A508FF00AF235F /* b3.obj in Resources */,
 				6C6B44C023A4F8BB00AF235F /* c0.scn in Resources */,
+				6C6B452523A50ED700AF235F /* K5110-10.jpg in Resources */,
+				6C6B44CE23A506AD00AF235F /* b3texture.jpg in Resources */,
 				6CCF26D6239DAAF300BB5CAE /* chair3.scn in Resources */,
+				6C6B453023A50F6300AF235F /* Wood_Sofa GM Plutone_Dif.jpg in Resources */,
+				6C6B452423A50ED700AF235F /* K5109-07.jpg in Resources */,
 				6C5C42B22395E5EB00EBEB35 /* dog2.png in Resources */,
+				6C6B459C23A5288C00AF235F /* t3.png in Resources */,
 				6C5C42B32395E5EB00EBEB35 /* dog3.png in Resources */,
+				6C6B44DB23A507C200AF235F /* fabric_48.jpg in Resources */,
 				6CCF26D4239DA96900BB5CAE /* stool3.scn in Resources */,
+				6C6B453623A5103B00AF235F /* s2.obj in Resources */,
 				6C6B44C723A4F8BB00AF235F /* c4.scn in Resources */,
+				6C6B44F823A50A7A00AF235F /* pillow _01.tx in Resources */,
+				6C6B44E123A507C200AF235F /* Cloth_b.jpg in Resources */,
+				6C6B44DC23A507C200AF235F /* wenge_wood.jpg in Resources */,
+				6C6B44DD23A507C200AF235F /* fabric0006_diffuse.jpg in Resources */,
+				6C6B457623A51F0800AF235F /* b3.png in Resources */,
+				6C6B450A23A50BFF00AF235F /* b1.scn in Resources */,
 				6C6B44C123A4F8BB00AF235F /* c3.png in Resources */,
+				6C6B458823A5260900AF235F /* b6.png in Resources */,
+				6C6B44D023A5079200AF235F /* b4.obj in Resources */,
+				6C6B453B23A5105B00AF235F /* wood_07_diffuse.jpg in Resources */,
+				6C6B453423A50F6300AF235F /* Cloth_Sofa GM Plutone_Bump.jpg in Resources */,
+				6C6B452823A50F3F00AF235F /* s1.obj in Resources */,
+				6C6B457E23A525BC00AF235F /* s3.png in Resources */,
+				6C6B457823A5259100AF235F /* s2.png in Resources */,
+				6C6B44E623A5091700AF235F /* b3.scn in Resources */,
 				6CCF26D0239DA3A200BB5CAE /* stool2.scn in Resources */,
 				6C7B1C242398AA9B008536AE /* chair.scn in Resources */,
 				6CCF26CC239DA0F100BB5CAE /* stool1.scn in Resources */,
+				6C6B456A23A51A7D00AF235F /* b3.jpg in Resources */,
+				6C6B453123A50F6300AF235F /* Cloth_Sofa GM Plutone_Dif.jpg in Resources */,
+				6C6B459923A5285900AF235F /* t0.png in Resources */,
+				6C6B450423A50B0700AF235F /* b0.obj in Resources */,
+				6C6B44EC23A5093100AF235F /* ZEROSPOTZ131.jpg in Resources */,
 				6CCF26D2239DA78B00BB5CAE /* chair2.scn in Resources */,
+				6C6B456223A5188800AF235F /* t3.jpg in Resources */,
 				6C6B44BF23A4F8BB00AF235F /* c3.scn in Resources */,
+				6C6B452023A50ED700AF235F /* K5109-09b.jpg in Resources */,
+				6C6B459823A5285900AF235F /* t2.png in Resources */,
 				6C6B44C323A4F8BB00AF235F /* c2.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

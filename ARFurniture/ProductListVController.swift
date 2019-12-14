@@ -92,7 +92,7 @@ class ProductListVController: UITableViewController,UISearchResultsUpdating,UISe
         //        UIFont *myFont = [ UIFont fontWithName: @"Arial" size: 18.0 ];
         //        cell.textLabel.font  = myFont;
                 cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-                       //        cell.imageView?.image = UIImage(named: "p\(indexPath.row).jpg")
+//                cell.imageView?.image = UIImage(named: "p\(indexPath.row).jpg")
                 cell.imageView?.image = UIImage(data:ProductArr[indexPath.row].productImage! )
                 cell.detailTextLabel?.text = "$ " + String(format: "%\(0.2)f", object.productCost)
                 cell.detailTextLabel?.font = UIFont.italicSystemFont(ofSize: 16)
@@ -128,6 +128,7 @@ class ProductListVController: UITableViewController,UISearchResultsUpdating,UISe
                 vd.prodprice = ProductArr[row ?? 0].productCost
                 vd.productphoto = UIImage(data:ProductArr[row!].productImage!,scale:1.0)
                 vd.productImgName = ProductArr[row ?? 0].productImageName
+                print("yayy",vd.productImgName)
                 vd.prod = ProductArr[row ?? 0]
             }
         }

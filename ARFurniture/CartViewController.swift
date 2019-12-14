@@ -24,6 +24,7 @@ class CartViewController: UIViewController {
     var arrcartitems:[CartItem] = [CartItem]()
     var cartarr:[CartItem] = [CartItem]()
     var quotes : [(key: String, value: Float)] = []
+    var fllaag = 0
     private var hud : MBProgressHUD!
     var grand : Double = 0.0
 //    fileprivate let apiKey = Bundle.main.object(forInfoDictionaryKey: "CL_APIKey") as! String
@@ -51,6 +52,11 @@ class CartViewController: UIViewController {
                  let billingAddress = tokenizedPayPalAccount.billingAddress
                  let shippingAddress = tokenizedPayPalAccount.shippingAddress
              
+                
+                PersistentService.persistentContainer.viewContext.delete(self.usercart!)
+                           PersistentService.saveContext()
+                self.arrcartitems.removeAll()
+                self.fllaag = 1
              let alert = UIAlertController(title: "✅", message: "Payment Successful", preferredStyle: .alert)
              alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default comment"), style: .default, handler: .none))
               self.present(alert, animated: true, completion: nil)
@@ -66,6 +72,13 @@ class CartViewController: UIViewController {
         }
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if(self.fllaag == 1){
+            arrcartitems.removeAll()
+        }
+    }
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -136,9 +149,12 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! CartItemCell
         cell.delegate = self as CartItemDelegate
+        if(arrcartitems.count > 0){
         cell.nameLabel.text = arrcartitems[indexPath.row].products!.productName
         cell.priceLabel.text = String(describing: (arrcartitems[indexPath.row]).products!.productCost)
         cell.productImage.image = UIImage(data: arrcartitems[indexPath.row].products!.productImage!) 
+        
+            }
         return cell
     }
     
