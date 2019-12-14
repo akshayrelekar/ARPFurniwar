@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JHn-46-vtB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JHn-46-vtB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -308,67 +308,6 @@
             </objects>
             <point key="canvasLocation" x="1450.7246376811595" y="787.5"/>
         </scene>
-        <!--Cart-->
-        <scene sceneID="KZH-Ax-4Vq">
-            <objects>
-                <viewController id="lqZ-du-jUf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="y4L-4T-2Q1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dav-5S-IJC">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QPj-H0-jEz">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCA-DV-b6k">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Egv-z6-rux">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                            </view>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="mCA-DV-b6k" secondAttribute="bottom" id="6sq-in-PZv"/>
-                                            <constraint firstItem="mCA-DV-b6k" firstAttribute="leading" secondItem="QPj-H0-jEz" secondAttribute="leading" id="T0o-wW-q9b"/>
-                                            <constraint firstItem="mCA-DV-b6k" firstAttribute="top" secondItem="QPj-H0-jEz" secondAttribute="top" id="gJF-oH-UCk"/>
-                                            <constraint firstAttribute="trailing" secondItem="mCA-DV-b6k" secondAttribute="trailing" id="mCF-yi-284"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="QPj-H0-jEz" firstAttribute="top" secondItem="SOr-Gf-7bc" secondAttribute="top" id="4RH-v2-Jad"/>
-                                    <constraint firstItem="QPj-H0-jEz" firstAttribute="centerX" secondItem="dav-5S-IJC" secondAttribute="centerX" id="9Pd-yI-c3S"/>
-                                    <constraint firstItem="QPj-H0-jEz" firstAttribute="bottom" secondItem="SOr-Gf-7bc" secondAttribute="bottom" id="DKS-fY-v1H"/>
-                                    <constraint firstItem="QPj-H0-jEz" firstAttribute="leading" secondItem="SOr-Gf-7bc" secondAttribute="leading" id="DqA-GC-aps"/>
-                                    <constraint firstAttribute="bottom" secondItem="QPj-H0-jEz" secondAttribute="bottom" id="kxX-i8-thA"/>
-                                    <constraint firstAttribute="trailing" secondItem="QPj-H0-jEz" secondAttribute="trailing" constant="-1" id="pZG-5p-sms"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="MDT-hj-lCV"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="SOr-Gf-7bc"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="dav-5S-IJC" secondAttribute="bottom" id="3Aq-XN-FMA"/>
-                            <constraint firstItem="dav-5S-IJC" firstAttribute="top" secondItem="pae-qd-dz2" secondAttribute="top" id="Ilr-m9-GYf"/>
-                            <constraint firstItem="dav-5S-IJC" firstAttribute="trailing" secondItem="pae-qd-dz2" secondAttribute="trailing" id="fgP-sp-VQD"/>
-                            <constraint firstItem="dav-5S-IJC" firstAttribute="leading" secondItem="pae-qd-dz2" secondAttribute="leading" id="zfw-uG-zgI"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="pae-qd-dz2"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Cart" image="cart.fill" catalog="system" id="1Q8-1y-zaU"/>
-                    <size key="freeformSize" width="414" height="1000"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hHa-to-QNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2207.2463768115945" y="787.5"/>
-        </scene>
         <!--Login Controller-->
         <scene sceneID="S4a-mM-v0U">
             <objects>
@@ -533,7 +472,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fmR-GR-FEG"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="YXm-nR-8yT"/>
+                    <tabBarItem key="tabBarItem" title="Home" selectedImage="house.fill" catalog="system" id="YXm-nR-8yT"/>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="carouselView" destination="ro8-vY-xla" id="82S-Ed-XaI"/>
@@ -544,10 +483,10 @@
             </objects>
             <point key="canvasLocation" x="2948" y="442"/>
         </scene>
-        <!--Product DetailsV Controller-->
+        <!--Tempfile-->
         <scene sceneID="DyX-B3-x8b">
             <objects>
-                <viewController id="Pfi-9F-3Tg" customClass="ProductDetailsVController" customModule="ARFurniture" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pfi-9F-3Tg" customClass="tempfile" customModule="ARFurniture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="urx-QQ-Dol">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -750,17 +689,17 @@
                     <navigationItem key="navigationItem" id="Vbt-Eb-s1C"/>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
-                        <outlet property="addToCartBtn" destination="3mE-Ud-1ci" id="DOP-6p-8xE"/>
-                        <outlet property="descriptionLabel" destination="QKB-wY-xoQ" id="ajv-IY-Yzn"/>
-                        <outlet property="dollarSignLabel" destination="vUH-ZL-PBh" id="ixO-7s-thw"/>
-                        <outlet property="priceLabel" destination="crj-IB-gSg" id="93B-He-yYm"/>
-                        <outlet property="priceNumberLabel" destination="IIz-rQ-9uH" id="9Qx-5F-HVc"/>
-                        <outlet property="productImage" destination="a9x-DG-9B6" id="8d3-AY-6h6"/>
-                        <outlet property="productNameLabel" destination="S1g-XW-nrm" id="Jee-ei-iQa"/>
-                        <outlet property="productdesc" destination="2z4-HO-UoT" id="RQy-aP-lWn"/>
-                        <outlet property="productspec" destination="KoD-C0-A0P" id="hBp-7N-11Y"/>
-                        <outlet property="specsLabel" destination="XAT-Qj-GdH" id="bmM-rF-XEJ"/>
-                        <outlet property="toARButton" destination="EvM-a9-Iti" id="3IB-BM-fpK"/>
+                        <outlet property="addToCartBtn" destination="3mE-Ud-1ci" id="d7E-mY-689"/>
+                        <outlet property="descriptionLabel" destination="QKB-wY-xoQ" id="idx-V7-1nL"/>
+                        <outlet property="dollarSignLabel" destination="vUH-ZL-PBh" id="T5v-59-8Ka"/>
+                        <outlet property="priceLabel" destination="crj-IB-gSg" id="Sp5-7u-2ht"/>
+                        <outlet property="priceNumberLabel" destination="IIz-rQ-9uH" id="2bd-2Q-LQj"/>
+                        <outlet property="productImage" destination="a9x-DG-9B6" id="ri7-m8-Z3k"/>
+                        <outlet property="productNameLabel" destination="S1g-XW-nrm" id="P3A-aV-d8x"/>
+                        <outlet property="productdesc" destination="2z4-HO-UoT" id="WOj-3V-12V"/>
+                        <outlet property="productspec" destination="KoD-C0-A0P" id="mSg-gg-Lma"/>
+                        <outlet property="specsLabel" destination="XAT-Qj-GdH" id="dej-R5-enZ"/>
+                        <outlet property="toARButton" destination="EvM-a9-Iti" id="aCH-0k-UDI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="smF-XG-bwI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -806,7 +745,7 @@
             </objects>
             <point key="canvasLocation" x="5241" y="370"/>
         </scene>
-        <!--Cart View Controller-->
+        <!--Cart-->
         <scene sceneID="BeC-EG-J3J">
             <objects>
                 <viewController id="qYb-md-6Vp" customClass="CartViewController" customModule="ARFurniture" customModuleProvider="target" sceneMemberID="viewController">
@@ -857,6 +796,9 @@
                                                     <state key="normal" title="+">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="updateCartItemQuantity:" destination="IfF-jC-7RF" eventType="touchUpInside" id="wJI-o9-7bJ"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYi-7l-0Qv">
                                                     <rect key="frame" x="320" y="10" width="30" height="25"/>
@@ -868,7 +810,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ne-n0-t7j">
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ne-n0-t7j">
                                                     <rect key="frame" x="358" y="8" width="30" height="26"/>
                                                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <constraints>
@@ -879,6 +821,9 @@
                                                     <state key="normal" title="-">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="updateCartItemQuantity:" destination="IfF-jC-7RF" eventType="touchUpInside" id="YpE-nl-WB4"/>
+                                                    </connections>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zJU-GH-GLu">
                                                     <rect key="frame" x="0.0" y="0.0" width="76" height="44.5"/>
@@ -914,6 +859,7 @@
                                             <outlet property="incrementButton" destination="laq-jF-fqB" id="I6H-NE-LVX"/>
                                             <outlet property="nameLabel" destination="v5h-9G-Qf3" id="QRj-Hc-Nvj"/>
                                             <outlet property="priceLabel" destination="2ow-br-6Gd" id="Bsf-ig-f3C"/>
+                                            <outlet property="productImage" destination="zJU-GH-GLu" id="01D-eM-3PX"/>
                                             <outlet property="quantityLabel" destination="AYi-7l-0Qv" id="XnI-Y8-CHc"/>
                                         </connections>
                                     </tableViewCell>
@@ -924,9 +870,9 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEN-7h-ykv">
-                                <rect key="frame" x="0.0" y="683" width="414" height="125"/>
+                                <rect key="frame" x="0.0" y="683" width="414" height="76"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwL-L4-aXp">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwL-L4-aXp">
                                         <rect key="frame" x="217" y="-15" width="189" height="59"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="59" id="6mq-Cs-OOe"/>
@@ -985,16 +931,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9zy-uK-Vgy"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Cart" selectedImage="cart.fill" catalog="system" id="C3i-md-m2Q"/>
                     <navigationItem key="navigationItem" id="U1Q-qT-b9c"/>
                     <connections>
                         <outlet property="tableView" destination="2pg-NT-i91" id="Yrn-oZ-lNr"/>
-                        <outlet property="totalLabel" destination="lzu-Mz-UXa" id="oDe-UV-DEk"/>
+                        <outlet property="totalLabel" destination="gwL-L4-aXp" id="YCX-sj-7Wt"/>
                         <outlet property="totalView" destination="XEN-7h-ykv" id="mKa-bm-veF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9y-mM-cdo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6457.971014492754" y="1234.8214285714284"/>
+            <point key="canvasLocation" x="2947.826086956522" y="1203.3482142857142"/>
         </scene>
         <!--Add ProductsV Controller-->
         <scene sceneID="VzD-8p-Mgx">
@@ -1401,7 +1348,7 @@
                         <segue destination="td3-W3-Btl" kind="relationship" relationship="viewControllers" id="5Zp-rx-1Cz"/>
                         <segue destination="aMF-ej-hyr" kind="relationship" relationship="viewControllers" id="ThR-cU-kTL"/>
                         <segue destination="GGL-zx-Ww4" kind="relationship" relationship="viewControllers" id="AXJ-OX-wTg"/>
-                        <segue destination="lqZ-du-jUf" kind="relationship" relationship="viewControllers" id="3JE-39-CRL"/>
+                        <segue destination="qYb-md-6Vp" kind="relationship" relationship="viewControllers" id="97s-LJ-j8S"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nnp-pD-twh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1416,9 +1363,9 @@
         <image name="camera.fill" catalog="system" width="64" height="48"/>
         <image name="cart.fill" catalog="system" width="64" height="50"/>
         <image name="categoriesBackground" width="1212" height="1830"/>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="list.dash" catalog="system" width="64" height="42"/>
         <image name="login" width="50" height="50"/>
-        <image name="loginBackground" width="5304" height="7952"/>
         <image name="output-onlinepngtools" width="3456" height="5184"/>
         <image name="person.fill" catalog="system" width="64" height="60"/>
         <image name="photo.fill" catalog="system" width="64" height="46"/>
@@ -1428,7 +1375,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ulG-zq-Tfd"/>
-        <segue reference="oXx-93-jPK"/>
+        <segue reference="97s-LJ-j8S"/>
+        <segue reference="5xo-pw-wW7"/>
         <segue reference="aVk-Mk-1zH"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Cart" representedClassName="Cart" syncable="YES" codeGenerationType="class">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Cart" representedClassName="Cart" syncable="YES">
         <attribute name="cartid" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="loggeduserid" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="total" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="item" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CartItem" inverseName="associatedcart" inverseEntity="CartItem"/>
     </entity>
-    <entity name="CartItem" representedClassName="CartItem" syncable="YES" codeGenerationType="class">
+    <entity name="CartItem" representedClassName="CartItem" syncable="YES">
         <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="subTotal" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="associatedcart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cart" inverseName="item" inverseEntity="Cart"/>

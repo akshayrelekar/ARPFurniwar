@@ -62,12 +62,31 @@ class AddProductsVController: UIViewController,UIPickerViewDelegate,UIPickerView
     
         let fetchRequest:NSFetchRequest<Product> = Product.fetchRequest()
         do{
+            
             let e = try PersistentService.context.fetch(fetchRequest)
             totalproducts = e
             
         }catch{
             print("cannot fetch the saved event")
         }
+        
+        for product in totalproducts{
+                          if(product.categoryname == "Tables"){
+                              TableArray.append(product)
+                          }
+                          else if(product.categoryname == "Chairs/Stools"){
+                              ChairArray.append(product)
+                          }
+                          else if(product.categoryname == "Beds"){
+                              BedArray.append(product)
+                          }
+                          else if(product.categoryname == "Sofa Sets"){
+                              SofaArray.append(product)
+                          }
+                          else if(product.categoryname == "Bean Bags"){
+                              BeanArray.append(product)
+                          }
+                      }
      
     }
     
@@ -133,12 +152,14 @@ class AddProductsVController: UIViewController,UIPickerViewDelegate,UIPickerView
             switch selectedCategory {
                 case "Tables":
                     p.productId = Int16(totalproducts.count)
+                    
                     p.productImage = UIImage(named: "t\(TableArray.count).png")?.pngData()
                     p.productImageName = "t\(TableArray.count)"
                     TableArray.append(p)
                     print(p.productImage)
                     print("Persisted - \(TableArray.count)")
                     PersistentService.saveContext()
+                    
                 break
                 case "Beds":
                     p.productId = Int16(totalproducts.count)

@@ -20,6 +20,7 @@ class CartItemCell: UITableViewCell {
     @IBOutlet weak var incrementButton: UIButton!
     @IBOutlet weak var decrementButton: UIButton!
     @IBOutlet weak var quantityLabel: UILabel!
+    @IBOutlet weak var productImage: UIImageView!
     
     var delegate: CartItemDelegate?
     var quantity: Int = 1
@@ -42,6 +43,7 @@ class CartItemCell: UITableViewCell {
     @IBAction func updateCartItemQuantity(_ sender: Any) {
         if (sender as! UIButton).tag == 0 {
             quantity = quantity + 1
+            
         } else if quantity > 0 {
             quantity = quantity - 1
         }

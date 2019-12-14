@@ -2,7 +2,7 @@
 //  ProductListVController.swift
 //  ARFurniture
 //
-//  Created by Payal Zanwar on 12/8/19.
+//  Created by Akshay Relekar on 12/13/19.
 //  Copyright © 2019 Akshay Relekar. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 class ProductListVController: UITableViewController,UISearchResultsUpdating,UISearchBarDelegate {
-    
+
     var SegueProduct:[Product]?
     var ProductArr:[Product] = []
     
@@ -24,17 +24,10 @@ class ProductListVController: UITableViewController,UISearchResultsUpdating,UISe
         return searchController.searchBar.text?.isEmpty ?? true
     }
     
-  
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-//          self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
-          searchController.searchBar.delegate = self
+        searchController.searchBar.delegate = self
           searchController.searchResultsUpdater = self
           searchController.obscuresBackgroundDuringPresentation = false
           searchController.searchBar.placeholder = "Enter your search"
@@ -55,7 +48,6 @@ class ProductListVController: UITableViewController,UISearchResultsUpdating,UISe
         }
     }
 
-    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -72,55 +64,9 @@ class ProductListVController: UITableViewController,UISearchResultsUpdating,UISe
     }
 
     func updateSearchResults(for searchController: UISearchController) {
-           let searchBar = searchController.searchBar
-           filterContentForSearchText(searchBar.text!)
-           
-       }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath)
-               
-               // Configure the cell...
-               var object:Product
-               if(isfiltering){
-                   object = filteredObjects[indexPath.row]
-               }else{
-                object = ProductArr[indexPath.row]
-               }
-               cell.textLabel?.text = object.productName
-//        UIFont *myFont = [ UIFont fontWithName: @"Arial" size: 18.0 ];
-//        cell.textLabel.font  = myFont;
-        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-               //        cell.imageView?.image = UIImage(named: "p\(indexPath.row).jpg")
-        cell.imageView?.image = UIImage(data:ProductArr[indexPath.row].productImage! )
-        cell.detailTextLabel?.text = "$ " + String(format: "%\(0.2)f", object.productCost)
-        cell.detailTextLabel?.font = UIFont.italicSystemFont(ofSize: 16)
-               return cell
-    }
-    
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            PersistentService.persistentContainer.viewContext.delete(ProductArr[indexPath.row])
-                        PersistentService.saveContext()
-//                           ProductArr.remove(at: indexPath.row)
-            //            ImageArray.remove(at: indexPath.row)
-                       
-                        tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        let searchBar = searchController.searchBar
+        filterContentForSearchText(searchBar.text!)
+        
     }
     
     func filterContentForSearchText(_ searchText: String,
@@ -131,26 +77,43 @@ class ProductListVController: UITableViewController,UISearchResultsUpdating,UISe
         
         tableView.reloadData()
     }
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
     
-    // MARK: - Navigation
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath)
+                       
+                       // Configure the cell...
+                       var object:Product
+                       if(isfiltering){
+                           object = filteredObjects[indexPath.row]
+                       }else{
+                        object = ProductArr[indexPath.row]
+                       }
+                       cell.textLabel?.text = object.productName
+        //        UIFont *myFont = [ UIFont fontWithName: @"Arial" size: 18.0 ];
+        //        cell.textLabel.font  = myFont;
+                cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+                       //        cell.imageView?.image = UIImage(named: "p\(indexPath.row).jpg")
+                cell.imageView?.image = UIImage(data:ProductArr[indexPath.row].productImage! )
+                cell.detailTextLabel?.text = "$ " + String(format: "%\(0.2)f", object.productCost)
+                cell.detailTextLabel?.font = UIFont.italicSystemFont(ofSize: 16)
+                       return cell
+    }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+                    // Delete the row from the data source
+                    PersistentService.persistentContainer.viewContext.delete(ProductArr[indexPath.row])
+                                PersistentService.saveContext()
+        //                           ProductArr.remove(at: indexPath.row)
+                    //            ImageArray.remove(at: indexPath.row)
+                               
+                                tableView.deleteRows(at: [indexPath], with: .fade)
+                } else if editingStyle == .insert {
+                    // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+                }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
@@ -158,17 +121,16 @@ class ProductListVController: UITableViewController,UISearchResultsUpdating,UISe
         guard let id = segue.identifier else {return}
         if( id == "ProductDetails"){
             let row = self.tableView.indexPathForSelectedRow?.row
-            if let vd = segue.destination as? ProductDetailsVController {
+            if let vd = segue.destination as? tempfile {
                 vd.prodname = ProductArr[row ?? 0].productName
                 vd.proddesc = ProductArr[row ?? 0].productDesc
                 vd.prodspecs = ProductArr[row ?? 0].productSpec
                 vd.prodprice = ProductArr[row ?? 0].productCost
                 vd.productphoto = UIImage(data:ProductArr[row!].productImage!,scale:1.0)
                 vd.productImgName = ProductArr[row ?? 0].productImageName
+                vd.prod = ProductArr[row ?? 0]
             }
-            
         }
     }
     
-
 }

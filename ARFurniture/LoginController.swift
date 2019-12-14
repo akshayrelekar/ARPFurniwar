@@ -123,6 +123,7 @@ class LoginController: UIViewController,UITextFieldDelegate,UIImagePickerControl
                             self.performSegue(withIdentifier: "AdminSegue", sender: self)
                         }
                         else{
+                            print("uuuuu",u.userId)
                             LoginController.selecteduserid = u.userId
                              self.performSegue(withIdentifier: "HomeSegue", sender: self)
                         }

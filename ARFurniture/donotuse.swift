@@ -76,8 +76,7 @@ class ProductDetailsVController: UIViewController {
                 let cartitem = CartItem(context: PersistentService.context)
                        cartitem.products?.productName = prodname
                        cartitem.products?.productCost = prodprice!
-                      
-                  
+               
 //                        cart.cartitem?.append(cartitem)
                  PersistentService.saveContext()
             }
@@ -90,7 +89,7 @@ class ProductDetailsVController: UIViewController {
            
             let cart = Cart(context: PersistentService.context)
             cart.loggeduserid = LoginController.selecteduserid!
-           
+            
 //            cart.cartitem?.append(cartitem)
            
             Carts.append(cart) // to be implemented
@@ -121,7 +120,7 @@ class ProductDetailsVController: UIViewController {
             if let vd = segue.destination as? CartViewController {
                 for c in Carts{
                     if(c.loggeduserid == LoginController.selecteduserid){
-                        print("--\(c.item?.count)")
+                        print("--\(c.item.count)")
                         vd.c = c
                     }
                 }
